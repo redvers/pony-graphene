@@ -1,0 +1,12 @@
+{
+  "packages": ["GrapheneSys"],
+  "deps": [],
+  "info": {
+    "description": "Pony wrapper for Graphene",
+    "homepage": "",
+    "license": "",
+    "documentation_url": "",
+    "version": "0.1",
+    "name": "GrapheneSys"
+  }
+}

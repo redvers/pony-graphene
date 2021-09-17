@@ -1,0 +1,19 @@
+<renderstructs>
+  <renderstruct id="_14355" render="0"/><!-- Graphenevec2t f414 -->
+  <renderstruct id="_14357" render="0"/><!-- Graphenevec3t f416 -->
+  <renderstruct id="_14359" render="0"/><!-- Graphenevec4t f417 -->
+  <renderstruct id="_14361" render="0"/><!-- Graphenematrixt f418 -->
+  <renderstruct id="_14363" render="0"/><!-- Graphenepointt f419 -->
+  <renderstruct id="_14365" render="0"/><!-- Graphenesizet f420 -->
+  <renderstruct id="_14367" render="0"/><!-- Graphenerectt f421 -->
+  <renderstruct id="_14369" render="0"/><!-- Graphenepoint3dt f422 -->
+  <renderstruct id="_14371" render="0"/><!-- Graphenequadt f423 -->
+  <renderstruct id="_14373" render="0"/><!-- Graphenequaterniont f424 -->
+  <renderstruct id="_14375" render="0"/><!-- Grapheneeulert f425 -->
+  <renderstruct id="_14377" render="0"/><!-- Grapheneplanet f426 -->
+  <renderstruct id="_14379" render="0"/><!-- Graphenefrustumt f427 -->
+  <renderstruct id="_14381" render="0"/><!-- Graphenespheret f428 -->
+  <renderstruct id="_14383" render="0"/><!-- Grapheneboxt f429 -->
+  <renderstruct id="_14385" render="0"/><!-- Graphenetrianglet f430 -->
+  <renderstruct id="_14387" render="0"/><!-- Graphenerayt f431 -->
+</renderstructs>

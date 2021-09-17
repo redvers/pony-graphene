@@ -1,0 +1,4837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="./renderuse.xml"/>
+<xi:include href="./usetypes.xml"/>
+<xi:include href="./gtk4.xml"/>
+                    <uses>
+                      <use id="_14931" name="graphene_vec2_alloc"
+     ponyname="graphene_vec2_alloc"
+     fid="f414"
+     lineno="51"
+     rv="NullablePointer[Graphenevec2t]">
+     <useargs/>
+  </use>
+  <use id="_14932" name="graphene_vec2_free"
+     ponyname="graphene_vec2_free"
+     fid="f414"
+     lineno="53"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14933" name="graphene_vec2_init"
+     ponyname="graphene_vec2_init"
+     fid="f414"
+     lineno="55"
+     rv="NullablePointer[Graphenevec2t]">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="x" type="F32"/>
+       <usearg name="y" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14934" name="graphene_vec2_init_from_vec2"
+     ponyname="graphene_vec2_init_from_vec2"
+     fid="f414"
+     lineno="59"
+     rv="NullablePointer[Graphenevec2t]">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="src" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14935" name="graphene_vec2_init_from_float"
+     ponyname="graphene_vec2_init_from_float"
+     fid="f414"
+     lineno="62"
+     rv="NullablePointer[Graphenevec2t]">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="src" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_14936" name="graphene_vec2_to_float"
+     ponyname="graphene_vec2_to_float"
+     fid="f414"
+     lineno="65"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="dest" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_14937" name="graphene_vec2_add"
+     ponyname="graphene_vec2_add"
+     fid="f414"
+     lineno="68"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14938" name="graphene_vec2_subtract"
+     ponyname="graphene_vec2_subtract"
+     fid="f414"
+     lineno="72"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14939" name="graphene_vec2_multiply"
+     ponyname="graphene_vec2_multiply"
+     fid="f414"
+     lineno="76"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14940" name="graphene_vec2_divide"
+     ponyname="graphene_vec2_divide"
+     fid="f414"
+     lineno="80"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14941" name="graphene_vec2_dot"
+     ponyname="graphene_vec2_dot"
+     fid="f414"
+     lineno="84"
+     rv="F32">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14942" name="graphene_vec2_length"
+     ponyname="graphene_vec2_length"
+     fid="f414"
+     lineno="87"
+     rv="F32">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14943" name="graphene_vec2_normalize"
+     ponyname="graphene_vec2_normalize"
+     fid="f414"
+     lineno="89"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14944" name="graphene_vec2_scale"
+     ponyname="graphene_vec2_scale"
+     fid="f414"
+     lineno="92"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="factor" type="F32"/>
+       <usearg name="res" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14945" name="graphene_vec2_negate"
+     ponyname="graphene_vec2_negate"
+     fid="f414"
+     lineno="96"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14946" name="graphene_vec2_near"
+     ponyname="graphene_vec2_near"
+     fid="f414"
+     lineno="99"
+     rv="Bool">
+     <useargs>
+       <usearg name="v1" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="v2" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="epsilon" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14947" name="graphene_vec2_equal"
+     ponyname="graphene_vec2_equal"
+     fid="f414"
+     lineno="103"
+     rv="Bool">
+     <useargs>
+       <usearg name="v1" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="v2" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14948" name="graphene_vec2_min"
+     ponyname="graphene_vec2_min"
+     fid="f414"
+     lineno="107"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14949" name="graphene_vec2_max"
+     ponyname="graphene_vec2_max"
+     fid="f414"
+     lineno="111"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14950" name="graphene_vec2_interpolate"
+     ponyname="graphene_vec2_interpolate"
+     fid="f414"
+     lineno="115"
+     rv="None">
+     <useargs>
+       <usearg name="v1" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="v2" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="factor" type="F64"/>
+       <usearg name="res" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14951" name="graphene_vec2_get_x"
+     ponyname="graphene_vec2_get_x"
+     fid="f414"
+     lineno="121"
+     rv="F32">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14952" name="graphene_vec2_get_y"
+     ponyname="graphene_vec2_get_y"
+     fid="f414"
+     lineno="123"
+     rv="F32">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14953" name="graphene_vec2_zero"
+     ponyname="graphene_vec2_zero"
+     fid="f414"
+     lineno="126"
+     rv="NullablePointer[Graphenevec2t]">
+     <useargs/>
+  </use>
+  <use id="_14954" name="graphene_vec2_one"
+     ponyname="graphene_vec2_one"
+     fid="f414"
+     lineno="128"
+     rv="NullablePointer[Graphenevec2t]">
+     <useargs/>
+  </use>
+  <use id="_14955" name="graphene_vec2_x_axis"
+     ponyname="graphene_vec2_x_axis"
+     fid="f414"
+     lineno="130"
+     rv="NullablePointer[Graphenevec2t]">
+     <useargs/>
+  </use>
+  <use id="_14956" name="graphene_vec2_y_axis"
+     ponyname="graphene_vec2_y_axis"
+     fid="f414"
+     lineno="132"
+     rv="NullablePointer[Graphenevec2t]">
+     <useargs/>
+  </use>
+  <use id="_14957" name="graphene_vec3_alloc"
+     ponyname="graphene_vec3_alloc"
+     fid="f416"
+     lineno="51"
+     rv="NullablePointer[Graphenevec3t]">
+     <useargs/>
+  </use>
+  <use id="_14958" name="graphene_vec3_free"
+     ponyname="graphene_vec3_free"
+     fid="f416"
+     lineno="53"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14959" name="graphene_vec3_init"
+     ponyname="graphene_vec3_init"
+     fid="f416"
+     lineno="55"
+     rv="NullablePointer[Graphenevec3t]">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="x" type="F32"/>
+       <usearg name="y" type="F32"/>
+       <usearg name="z" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14960" name="graphene_vec3_init_from_vec3"
+     ponyname="graphene_vec3_init_from_vec3"
+     fid="f416"
+     lineno="60"
+     rv="NullablePointer[Graphenevec3t]">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="src" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14961" name="graphene_vec3_init_from_float"
+     ponyname="graphene_vec3_init_from_float"
+     fid="f416"
+     lineno="63"
+     rv="NullablePointer[Graphenevec3t]">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="src" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_14962" name="graphene_vec3_to_float"
+     ponyname="graphene_vec3_to_float"
+     fid="f416"
+     lineno="66"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="dest" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_14963" name="graphene_vec3_add"
+     ponyname="graphene_vec3_add"
+     fid="f416"
+     lineno="69"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14964" name="graphene_vec3_subtract"
+     ponyname="graphene_vec3_subtract"
+     fid="f416"
+     lineno="73"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14965" name="graphene_vec3_multiply"
+     ponyname="graphene_vec3_multiply"
+     fid="f416"
+     lineno="77"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14966" name="graphene_vec3_divide"
+     ponyname="graphene_vec3_divide"
+     fid="f416"
+     lineno="81"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14967" name="graphene_vec3_cross"
+     ponyname="graphene_vec3_cross"
+     fid="f416"
+     lineno="85"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14968" name="graphene_vec3_dot"
+     ponyname="graphene_vec3_dot"
+     fid="f416"
+     lineno="89"
+     rv="F32">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14969" name="graphene_vec3_length"
+     ponyname="graphene_vec3_length"
+     fid="f416"
+     lineno="92"
+     rv="F32">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14970" name="graphene_vec3_normalize"
+     ponyname="graphene_vec3_normalize"
+     fid="f416"
+     lineno="94"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14971" name="graphene_vec3_scale"
+     ponyname="graphene_vec3_scale"
+     fid="f416"
+     lineno="97"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="factor" type="F32"/>
+       <usearg name="res" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14972" name="graphene_vec3_negate"
+     ponyname="graphene_vec3_negate"
+     fid="f416"
+     lineno="101"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14973" name="graphene_vec3_equal"
+     ponyname="graphene_vec3_equal"
+     fid="f416"
+     lineno="104"
+     rv="Bool">
+     <useargs>
+       <usearg name="v1" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="v2" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14974" name="graphene_vec3_near"
+     ponyname="graphene_vec3_near"
+     fid="f416"
+     lineno="107"
+     rv="Bool">
+     <useargs>
+       <usearg name="v1" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="v2" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="epsilon" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14975" name="graphene_vec3_min"
+     ponyname="graphene_vec3_min"
+     fid="f416"
+     lineno="111"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14976" name="graphene_vec3_max"
+     ponyname="graphene_vec3_max"
+     fid="f416"
+     lineno="115"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14977" name="graphene_vec3_interpolate"
+     ponyname="graphene_vec3_interpolate"
+     fid="f416"
+     lineno="119"
+     rv="None">
+     <useargs>
+       <usearg name="v1" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="v2" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="factor" type="F64"/>
+       <usearg name="res" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14978" name="graphene_vec3_get_x"
+     ponyname="graphene_vec3_get_x"
+     fid="f416"
+     lineno="125"
+     rv="F32">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14979" name="graphene_vec3_get_y"
+     ponyname="graphene_vec3_get_y"
+     fid="f416"
+     lineno="127"
+     rv="F32">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14980" name="graphene_vec3_get_z"
+     ponyname="graphene_vec3_get_z"
+     fid="f416"
+     lineno="129"
+     rv="F32">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14981" name="graphene_vec3_get_xy"
+     ponyname="graphene_vec3_get_xy"
+     fid="f416"
+     lineno="132"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_14982" name="graphene_vec3_get_xy0"
+     ponyname="graphene_vec3_get_xy0"
+     fid="f416"
+     lineno="135"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_14983" name="graphene_vec3_get_xyz0"
+     ponyname="graphene_vec3_get_xyz0"
+     fid="f416"
+     lineno="138"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_14984" name="graphene_vec3_get_xyz1"
+     ponyname="graphene_vec3_get_xyz1"
+     fid="f416"
+     lineno="141"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_14985" name="graphene_vec3_get_xyzw"
+     ponyname="graphene_vec3_get_xyzw"
+     fid="f416"
+     lineno="144"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="w" type="F32"/>
+       <usearg name="res" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_14986" name="graphene_vec3_zero"
+     ponyname="graphene_vec3_zero"
+     fid="f416"
+     lineno="149"
+     rv="NullablePointer[Graphenevec3t]">
+     <useargs/>
+  </use>
+  <use id="_14987" name="graphene_vec3_one"
+     ponyname="graphene_vec3_one"
+     fid="f416"
+     lineno="151"
+     rv="NullablePointer[Graphenevec3t]">
+     <useargs/>
+  </use>
+  <use id="_14988" name="graphene_vec3_x_axis"
+     ponyname="graphene_vec3_x_axis"
+     fid="f416"
+     lineno="153"
+     rv="NullablePointer[Graphenevec3t]">
+     <useargs/>
+  </use>
+  <use id="_14989" name="graphene_vec3_y_axis"
+     ponyname="graphene_vec3_y_axis"
+     fid="f416"
+     lineno="155"
+     rv="NullablePointer[Graphenevec3t]">
+     <useargs/>
+  </use>
+  <use id="_14990" name="graphene_vec3_z_axis"
+     ponyname="graphene_vec3_z_axis"
+     fid="f416"
+     lineno="157"
+     rv="NullablePointer[Graphenevec3t]">
+     <useargs/>
+  </use>
+  <use id="_14991" name="graphene_vec4_alloc"
+     ponyname="graphene_vec4_alloc"
+     fid="f417"
+     lineno="49"
+     rv="NullablePointer[Graphenevec4t]">
+     <useargs/>
+  </use>
+  <use id="_14992" name="graphene_vec4_free"
+     ponyname="graphene_vec4_free"
+     fid="f417"
+     lineno="51"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_14993" name="graphene_vec4_init"
+     ponyname="graphene_vec4_init"
+     fid="f417"
+     lineno="53"
+     rv="NullablePointer[Graphenevec4t]">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="x" type="F32"/>
+       <usearg name="y" type="F32"/>
+       <usearg name="z" type="F32"/>
+       <usearg name="w" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14994" name="graphene_vec4_init_from_vec4"
+     ponyname="graphene_vec4_init_from_vec4"
+     fid="f417"
+     lineno="59"
+     rv="NullablePointer[Graphenevec4t]">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="src" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_14995" name="graphene_vec4_init_from_vec3"
+     ponyname="graphene_vec4_init_from_vec3"
+     fid="f417"
+     lineno="62"
+     rv="NullablePointer[Graphenevec4t]">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="src" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="w" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14996" name="graphene_vec4_init_from_vec2"
+     ponyname="graphene_vec4_init_from_vec2"
+     fid="f417"
+     lineno="66"
+     rv="NullablePointer[Graphenevec4t]">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="src" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="z" type="F32"/>
+       <usearg name="w" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14997" name="graphene_vec4_init_from_float"
+     ponyname="graphene_vec4_init_from_float"
+     fid="f417"
+     lineno="71"
+     rv="NullablePointer[Graphenevec4t]">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="src" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_14998" name="graphene_vec4_to_float"
+     ponyname="graphene_vec4_to_float"
+     fid="f417"
+     lineno="74"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="dest" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_14999" name="graphene_vec4_add"
+     ponyname="graphene_vec4_add"
+     fid="f417"
+     lineno="77"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15000" name="graphene_vec4_subtract"
+     ponyname="graphene_vec4_subtract"
+     fid="f417"
+     lineno="81"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15001" name="graphene_vec4_multiply"
+     ponyname="graphene_vec4_multiply"
+     fid="f417"
+     lineno="85"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15002" name="graphene_vec4_divide"
+     ponyname="graphene_vec4_divide"
+     fid="f417"
+     lineno="89"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15003" name="graphene_vec4_dot"
+     ponyname="graphene_vec4_dot"
+     fid="f417"
+     lineno="93"
+     rv="F32">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15004" name="graphene_vec4_length"
+     ponyname="graphene_vec4_length"
+     fid="f417"
+     lineno="96"
+     rv="F32">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15005" name="graphene_vec4_normalize"
+     ponyname="graphene_vec4_normalize"
+     fid="f417"
+     lineno="98"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15006" name="graphene_vec4_scale"
+     ponyname="graphene_vec4_scale"
+     fid="f417"
+     lineno="101"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="factor" type="F32"/>
+       <usearg name="res" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15007" name="graphene_vec4_negate"
+     ponyname="graphene_vec4_negate"
+     fid="f417"
+     lineno="105"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15008" name="graphene_vec4_equal"
+     ponyname="graphene_vec4_equal"
+     fid="f417"
+     lineno="108"
+     rv="Bool">
+     <useargs>
+       <usearg name="v1" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="v2" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15009" name="graphene_vec4_near"
+     ponyname="graphene_vec4_near"
+     fid="f417"
+     lineno="111"
+     rv="Bool">
+     <useargs>
+       <usearg name="v1" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="v2" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="epsilon" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15010" name="graphene_vec4_min"
+     ponyname="graphene_vec4_min"
+     fid="f417"
+     lineno="116"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15011" name="graphene_vec4_max"
+     ponyname="graphene_vec4_max"
+     fid="f417"
+     lineno="120"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15012" name="graphene_vec4_interpolate"
+     ponyname="graphene_vec4_interpolate"
+     fid="f417"
+     lineno="124"
+     rv="None">
+     <useargs>
+       <usearg name="v1" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="v2" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="factor" type="F64"/>
+       <usearg name="res" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15013" name="graphene_vec4_get_x"
+     ponyname="graphene_vec4_get_x"
+     fid="f417"
+     lineno="130"
+     rv="F32">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15014" name="graphene_vec4_get_y"
+     ponyname="graphene_vec4_get_y"
+     fid="f417"
+     lineno="132"
+     rv="F32">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15015" name="graphene_vec4_get_z"
+     ponyname="graphene_vec4_get_z"
+     fid="f417"
+     lineno="134"
+     rv="F32">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15016" name="graphene_vec4_get_w"
+     ponyname="graphene_vec4_get_w"
+     fid="f417"
+     lineno="136"
+     rv="F32">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15017" name="graphene_vec4_get_xy"
+     ponyname="graphene_vec4_get_xy"
+     fid="f417"
+     lineno="139"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_15018" name="graphene_vec4_get_xyz"
+     ponyname="graphene_vec4_get_xyz"
+     fid="f417"
+     lineno="142"
+     rv="None">
+     <useargs>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15019" name="graphene_vec4_zero"
+     ponyname="graphene_vec4_zero"
+     fid="f417"
+     lineno="146"
+     rv="NullablePointer[Graphenevec4t]">
+     <useargs/>
+  </use>
+  <use id="_15020" name="graphene_vec4_one"
+     ponyname="graphene_vec4_one"
+     fid="f417"
+     lineno="148"
+     rv="NullablePointer[Graphenevec4t]">
+     <useargs/>
+  </use>
+  <use id="_15021" name="graphene_vec4_x_axis"
+     ponyname="graphene_vec4_x_axis"
+     fid="f417"
+     lineno="150"
+     rv="NullablePointer[Graphenevec4t]">
+     <useargs/>
+  </use>
+  <use id="_15022" name="graphene_vec4_y_axis"
+     ponyname="graphene_vec4_y_axis"
+     fid="f417"
+     lineno="152"
+     rv="NullablePointer[Graphenevec4t]">
+     <useargs/>
+  </use>
+  <use id="_15023" name="graphene_vec4_z_axis"
+     ponyname="graphene_vec4_z_axis"
+     fid="f417"
+     lineno="154"
+     rv="NullablePointer[Graphenevec4t]">
+     <useargs/>
+  </use>
+  <use id="_15024" name="graphene_vec4_w_axis"
+     ponyname="graphene_vec4_w_axis"
+     fid="f417"
+     lineno="156"
+     rv="NullablePointer[Graphenevec4t]">
+     <useargs/>
+  </use>
+  <use id="_15025" name="graphene_matrix_alloc"
+     ponyname="graphene_matrix_alloc"
+     fid="f418"
+     lineno="47"
+     rv="NullablePointer[Graphenematrixt]">
+     <useargs/>
+  </use>
+  <use id="_15026" name="graphene_matrix_free"
+     ponyname="graphene_matrix_free"
+     fid="f418"
+     lineno="49"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15027" name="graphene_matrix_init_identity"
+     ponyname="graphene_matrix_init_identity"
+     fid="f418"
+     lineno="52"
+     rv="NullablePointer[Graphenematrixt]">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15028" name="graphene_matrix_init_from_float"
+     ponyname="graphene_matrix_init_from_float"
+     fid="f418"
+     lineno="54"
+     rv="NullablePointer[Graphenematrixt]">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="v" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_15029" name="graphene_matrix_init_from_vec4"
+     ponyname="graphene_matrix_init_from_vec4"
+     fid="f418"
+     lineno="57"
+     rv="NullablePointer[Graphenematrixt]">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="v0" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="v1" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="v2" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="v3" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15030" name="graphene_matrix_init_from_matrix"
+     ponyname="graphene_matrix_init_from_matrix"
+     fid="f418"
+     lineno="63"
+     rv="NullablePointer[Graphenematrixt]">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="src" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15031" name="graphene_matrix_init_perspective"
+     ponyname="graphene_matrix_init_perspective"
+     fid="f418"
+     lineno="66"
+     rv="NullablePointer[Graphenematrixt]">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="fovy" type="F32"/>
+       <usearg name="aspect" type="F32"/>
+       <usearg name="znear" type="F32"/>
+       <usearg name="zfar" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15032" name="graphene_matrix_init_ortho"
+     ponyname="graphene_matrix_init_ortho"
+     fid="f418"
+     lineno="72"
+     rv="NullablePointer[Graphenematrixt]">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="left" type="F32"/>
+       <usearg name="right" type="F32"/>
+       <usearg name="top" type="F32"/>
+       <usearg name="bottom" type="F32"/>
+       <usearg name="znear" type="F32"/>
+       <usearg name="zfar" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15033" name="graphene_matrix_init_look_at"
+     ponyname="graphene_matrix_init_look_at"
+     fid="f418"
+     lineno="80"
+     rv="NullablePointer[Graphenematrixt]">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="eye" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="center" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="up" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15034" name="graphene_matrix_init_frustum"
+     ponyname="graphene_matrix_init_frustum"
+     fid="f418"
+     lineno="85"
+     rv="NullablePointer[Graphenematrixt]">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="left" type="F32"/>
+       <usearg name="right" type="F32"/>
+       <usearg name="bottom" type="F32"/>
+       <usearg name="top" type="F32"/>
+       <usearg name="znear" type="F32"/>
+       <usearg name="zfar" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15035" name="graphene_matrix_init_scale"
+     ponyname="graphene_matrix_init_scale"
+     fid="f418"
+     lineno="93"
+     rv="NullablePointer[Graphenematrixt]">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="x" type="F32"/>
+       <usearg name="y" type="F32"/>
+       <usearg name="z" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15036" name="graphene_matrix_init_translate"
+     ponyname="graphene_matrix_init_translate"
+     fid="f418"
+     lineno="98"
+     rv="NullablePointer[Graphenematrixt]">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="p" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15037" name="graphene_matrix_init_rotate"
+     ponyname="graphene_matrix_init_rotate"
+     fid="f418"
+     lineno="101"
+     rv="NullablePointer[Graphenematrixt]">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="angle" type="F32"/>
+       <usearg name="axis" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15038" name="graphene_matrix_init_skew"
+     ponyname="graphene_matrix_init_skew"
+     fid="f418"
+     lineno="105"
+     rv="NullablePointer[Graphenematrixt]">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="xskew" type="F32"/>
+       <usearg name="yskew" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15039" name="graphene_matrix_init_from_2d"
+     ponyname="graphene_matrix_init_from_2d"
+     fid="f418"
+     lineno="109"
+     rv="NullablePointer[Graphenematrixt]">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="xx" type="F64"/>
+       <usearg name="yx" type="F64"/>
+       <usearg name="xy" type="F64"/>
+       <usearg name="yy" type="F64"/>
+       <usearg name="x0" type="F64"/>
+       <usearg name="y0" type="F64"/>
+     </useargs>
+  </use>
+  <use id="_15040" name="graphene_matrix_is_identity"
+     ponyname="graphene_matrix_is_identity"
+     fid="f418"
+     lineno="118"
+     rv="Bool">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15041" name="graphene_matrix_is_2d"
+     ponyname="graphene_matrix_is_2d"
+     fid="f418"
+     lineno="120"
+     rv="Bool">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15042" name="graphene_matrix_is_backface_visible"
+     ponyname="graphene_matrix_is_backface_visible"
+     fid="f418"
+     lineno="122"
+     rv="Bool">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15043" name="graphene_matrix_is_singular"
+     ponyname="graphene_matrix_is_singular"
+     fid="f418"
+     lineno="124"
+     rv="Bool">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15044" name="graphene_matrix_to_float"
+     ponyname="graphene_matrix_to_float"
+     fid="f418"
+     lineno="127"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="v" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_15045" name="graphene_matrix_to_2d"
+     ponyname="graphene_matrix_to_2d"
+     fid="f418"
+     lineno="130"
+     rv="Bool">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="xx" type="Pointer[F64]"/>
+       <usearg name="yx" type="Pointer[F64]"/>
+       <usearg name="xy" type="Pointer[F64]"/>
+       <usearg name="yy" type="Pointer[F64]"/>
+       <usearg name="x0" type="Pointer[F64]"/>
+       <usearg name="y0" type="Pointer[F64]"/>
+     </useargs>
+  </use>
+  <use id="_15046" name="graphene_matrix_get_row"
+     ponyname="graphene_matrix_get_row"
+     fid="f418"
+     lineno="140"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="index" type="U32"/>
+       <usearg name="res" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15047" name="graphene_matrix_get_value"
+     ponyname="graphene_matrix_get_value"
+     fid="f418"
+     lineno="144"
+     rv="F32">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="row" type="U32"/>
+       <usearg name="col" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_15048" name="graphene_matrix_multiply"
+     ponyname="graphene_matrix_multiply"
+     fid="f418"
+     lineno="149"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="b" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="res" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15049" name="graphene_matrix_determinant"
+     ponyname="graphene_matrix_determinant"
+     fid="f418"
+     lineno="153"
+     rv="F32">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15050" name="graphene_matrix_transform_vec4"
+     ponyname="graphene_matrix_transform_vec4"
+     fid="f418"
+     lineno="156"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="v" type="NullablePointer[Graphenevec4t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15051" name="graphene_matrix_transform_vec3"
+     ponyname="graphene_matrix_transform_vec3"
+     fid="f418"
+     lineno="160"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15052" name="graphene_matrix_transform_point"
+     ponyname="graphene_matrix_transform_point"
+     fid="f418"
+     lineno="164"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="p" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="res" type="NullablePointer[Graphenepointt]"/>
+     </useargs>
+  </use>
+  <use id="_15053" name="graphene_matrix_transform_point3d"
+     ponyname="graphene_matrix_transform_point3d"
+     fid="f418"
+     lineno="168"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="p" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="res" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15054" name="graphene_matrix_transform_rect"
+     ponyname="graphene_matrix_transform_rect"
+     fid="f418"
+     lineno="172"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="res" type="NullablePointer[Graphenequadt]"/>
+     </useargs>
+  </use>
+  <use id="_15055" name="graphene_matrix_transform_bounds"
+     ponyname="graphene_matrix_transform_bounds"
+     fid="f418"
+     lineno="176"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="res" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15056" name="graphene_matrix_transform_sphere"
+     ponyname="graphene_matrix_transform_sphere"
+     fid="f418"
+     lineno="180"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="s" type="NullablePointer[Graphenespheret]"/>
+       <usearg name="res" type="NullablePointer[Graphenespheret]"/>
+     </useargs>
+  </use>
+  <use id="_15057" name="graphene_matrix_transform_box"
+     ponyname="graphene_matrix_transform_box"
+     fid="f418"
+     lineno="184"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="b" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="res" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15058" name="graphene_matrix_transform_ray"
+     ponyname="graphene_matrix_transform_ray"
+     fid="f418"
+     lineno="188"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="res" type="NullablePointer[Graphenerayt]"/>
+     </useargs>
+  </use>
+  <use id="_15059" name="graphene_matrix_project_point"
+     ponyname="graphene_matrix_project_point"
+     fid="f418"
+     lineno="193"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="p" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="res" type="NullablePointer[Graphenepointt]"/>
+     </useargs>
+  </use>
+  <use id="_15060" name="graphene_matrix_project_rect_bounds"
+     ponyname="graphene_matrix_project_rect_bounds"
+     fid="f418"
+     lineno="197"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="res" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15061" name="graphene_matrix_project_rect"
+     ponyname="graphene_matrix_project_rect"
+     fid="f418"
+     lineno="201"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="res" type="NullablePointer[Graphenequadt]"/>
+     </useargs>
+  </use>
+  <use id="_15062" name="graphene_matrix_untransform_point"
+     ponyname="graphene_matrix_untransform_point"
+     fid="f418"
+     lineno="205"
+     rv="Bool">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="p" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="bounds" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="res" type="NullablePointer[Graphenepointt]"/>
+     </useargs>
+  </use>
+  <use id="_15063" name="graphene_matrix_untransform_bounds"
+     ponyname="graphene_matrix_untransform_bounds"
+     fid="f418"
+     lineno="210"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="bounds" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="res" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15064" name="graphene_matrix_unproject_point3d"
+     ponyname="graphene_matrix_unproject_point3d"
+     fid="f418"
+     lineno="215"
+     rv="None">
+     <useargs>
+       <usearg name="projection" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="modelview" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="point" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="res" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15065" name="graphene_matrix_translate"
+     ponyname="graphene_matrix_translate"
+     fid="f418"
+     lineno="221"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="pos" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15066" name="graphene_matrix_rotate"
+     ponyname="graphene_matrix_rotate"
+     fid="f418"
+     lineno="224"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="angle" type="F32"/>
+       <usearg name="axis" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15067" name="graphene_matrix_rotate_x"
+     ponyname="graphene_matrix_rotate_x"
+     fid="f418"
+     lineno="228"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="angle" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15068" name="graphene_matrix_rotate_y"
+     ponyname="graphene_matrix_rotate_y"
+     fid="f418"
+     lineno="231"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="angle" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15069" name="graphene_matrix_rotate_z"
+     ponyname="graphene_matrix_rotate_z"
+     fid="f418"
+     lineno="234"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="angle" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15070" name="graphene_matrix_rotate_quaternion"
+     ponyname="graphene_matrix_rotate_quaternion"
+     fid="f418"
+     lineno="237"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+     </useargs>
+  </use>
+  <use id="_15071" name="graphene_matrix_rotate_euler"
+     ponyname="graphene_matrix_rotate_euler"
+     fid="f418"
+     lineno="240"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+     </useargs>
+  </use>
+  <use id="_15072" name="graphene_matrix_scale"
+     ponyname="graphene_matrix_scale"
+     fid="f418"
+     lineno="243"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="factorx" type="F32"/>
+       <usearg name="factory" type="F32"/>
+       <usearg name="factorz" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15073" name="graphene_matrix_skew_xy"
+     ponyname="graphene_matrix_skew_xy"
+     fid="f418"
+     lineno="248"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="factor" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15074" name="graphene_matrix_skew_xz"
+     ponyname="graphene_matrix_skew_xz"
+     fid="f418"
+     lineno="251"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="factor" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15075" name="graphene_matrix_skew_yz"
+     ponyname="graphene_matrix_skew_yz"
+     fid="f418"
+     lineno="254"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="factor" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15076" name="graphene_matrix_transpose"
+     ponyname="graphene_matrix_transpose"
+     fid="f418"
+     lineno="258"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="res" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15077" name="graphene_matrix_inverse"
+     ponyname="graphene_matrix_inverse"
+     fid="f418"
+     lineno="261"
+     rv="Bool">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="res" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15078" name="graphene_matrix_perspective"
+     ponyname="graphene_matrix_perspective"
+     fid="f418"
+     lineno="264"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="depth" type="F32"/>
+       <usearg name="res" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15079" name="graphene_matrix_normalize"
+     ponyname="graphene_matrix_normalize"
+     fid="f418"
+     lineno="268"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="res" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15080" name="graphene_matrix_get_x_translation"
+     ponyname="graphene_matrix_get_x_translation"
+     fid="f418"
+     lineno="272"
+     rv="F32">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15081" name="graphene_matrix_get_y_translation"
+     ponyname="graphene_matrix_get_y_translation"
+     fid="f418"
+     lineno="274"
+     rv="F32">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15082" name="graphene_matrix_get_z_translation"
+     ponyname="graphene_matrix_get_z_translation"
+     fid="f418"
+     lineno="276"
+     rv="F32">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15083" name="graphene_matrix_get_x_scale"
+     ponyname="graphene_matrix_get_x_scale"
+     fid="f418"
+     lineno="279"
+     rv="F32">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15084" name="graphene_matrix_get_y_scale"
+     ponyname="graphene_matrix_get_y_scale"
+     fid="f418"
+     lineno="281"
+     rv="F32">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15085" name="graphene_matrix_get_z_scale"
+     ponyname="graphene_matrix_get_z_scale"
+     fid="f418"
+     lineno="283"
+     rv="F32">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15086" name="graphene_matrix_interpolate"
+     ponyname="graphene_matrix_interpolate"
+     fid="f418"
+     lineno="286"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="b" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="factor" type="F64"/>
+       <usearg name="res" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15087" name="graphene_matrix_near"
+     ponyname="graphene_matrix_near"
+     fid="f418"
+     lineno="292"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="b" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="epsilon" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15088" name="graphene_matrix_equal"
+     ponyname="graphene_matrix_equal"
+     fid="f418"
+     lineno="296"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="b" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15089" name="graphene_matrix_equal_fast"
+     ponyname="graphene_matrix_equal_fast"
+     fid="f418"
+     lineno="299"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="b" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15090" name="graphene_matrix_print"
+     ponyname="graphene_matrix_print"
+     fid="f418"
+     lineno="303"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15091" name="graphene_matrix_decompose"
+     ponyname="graphene_matrix_decompose"
+     fid="f418"
+     lineno="306"
+     rv="Bool">
+     <useargs>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="translate" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="scale" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="rotate" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="shear" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="perspective" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15092" name="graphene_point_alloc"
+     ponyname="graphene_point_alloc"
+     fid="f419"
+     lineno="77"
+     rv="NullablePointer[Graphenepointt]">
+     <useargs/>
+  </use>
+  <use id="_15093" name="graphene_point_free"
+     ponyname="graphene_point_free"
+     fid="f419"
+     lineno="79"
+     rv="None">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Graphenepointt]"/>
+     </useargs>
+  </use>
+  <use id="_15094" name="graphene_point_init"
+     ponyname="graphene_point_init"
+     fid="f419"
+     lineno="82"
+     rv="NullablePointer[Graphenepointt]">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="x" type="F32"/>
+       <usearg name="y" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15095" name="graphene_point_init_from_point"
+     ponyname="graphene_point_init_from_point"
+     fid="f419"
+     lineno="86"
+     rv="NullablePointer[Graphenepointt]">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="src" type="NullablePointer[Graphenepointt]"/>
+     </useargs>
+  </use>
+  <use id="_15096" name="graphene_point_init_from_vec2"
+     ponyname="graphene_point_init_from_vec2"
+     fid="f419"
+     lineno="89"
+     rv="NullablePointer[Graphenepointt]">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="src" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_15097" name="graphene_point_equal"
+     ponyname="graphene_point_equal"
+     fid="f419"
+     lineno="92"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="b" type="NullablePointer[Graphenepointt]"/>
+     </useargs>
+  </use>
+  <use id="_15098" name="graphene_point_distance"
+     ponyname="graphene_point_distance"
+     fid="f419"
+     lineno="96"
+     rv="F32">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="b" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="dx" type="Pointer[F32]"/>
+       <usearg name="dy" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_15099" name="graphene_point_near"
+     ponyname="graphene_point_near"
+     fid="f419"
+     lineno="102"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="b" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="epsilon" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15100" name="graphene_point_interpolate"
+     ponyname="graphene_point_interpolate"
+     fid="f419"
+     lineno="107"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="b" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="factor" type="F64"/>
+       <usearg name="res" type="NullablePointer[Graphenepointt]"/>
+     </useargs>
+  </use>
+  <use id="_15101" name="graphene_point_to_vec2"
+     ponyname="graphene_point_to_vec2"
+     fid="f419"
+     lineno="113"
+     rv="None">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="v" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_15102" name="graphene_point_zero"
+     ponyname="graphene_point_zero"
+     fid="f419"
+     lineno="117"
+     rv="NullablePointer[Graphenepointt]">
+     <useargs/>
+  </use>
+  <use id="_15103" name="graphene_size_alloc"
+     ponyname="graphene_size_alloc"
+     fid="f420"
+     lineno="77"
+     rv="NullablePointer[Graphenesizet]">
+     <useargs/>
+  </use>
+  <use id="_15104" name="graphene_size_free"
+     ponyname="graphene_size_free"
+     fid="f420"
+     lineno="79"
+     rv="None">
+     <useargs>
+       <usearg name="s" type="NullablePointer[Graphenesizet]"/>
+     </useargs>
+  </use>
+  <use id="_15105" name="graphene_size_init"
+     ponyname="graphene_size_init"
+     fid="f420"
+     lineno="81"
+     rv="NullablePointer[Graphenesizet]">
+     <useargs>
+       <usearg name="s" type="NullablePointer[Graphenesizet]"/>
+       <usearg name="width" type="F32"/>
+       <usearg name="height" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15106" name="graphene_size_init_from_size"
+     ponyname="graphene_size_init_from_size"
+     fid="f420"
+     lineno="85"
+     rv="NullablePointer[Graphenesizet]">
+     <useargs>
+       <usearg name="s" type="NullablePointer[Graphenesizet]"/>
+       <usearg name="src" type="NullablePointer[Graphenesizet]"/>
+     </useargs>
+  </use>
+  <use id="_15107" name="graphene_size_equal"
+     ponyname="graphene_size_equal"
+     fid="f420"
+     lineno="88"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenesizet]"/>
+       <usearg name="b" type="NullablePointer[Graphenesizet]"/>
+     </useargs>
+  </use>
+  <use id="_15108" name="graphene_size_scale"
+     ponyname="graphene_size_scale"
+     fid="f420"
+     lineno="92"
+     rv="None">
+     <useargs>
+       <usearg name="s" type="NullablePointer[Graphenesizet]"/>
+       <usearg name="factor" type="F32"/>
+       <usearg name="res" type="NullablePointer[Graphenesizet]"/>
+     </useargs>
+  </use>
+  <use id="_15109" name="graphene_size_interpolate"
+     ponyname="graphene_size_interpolate"
+     fid="f420"
+     lineno="96"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenesizet]"/>
+       <usearg name="b" type="NullablePointer[Graphenesizet]"/>
+       <usearg name="factor" type="F64"/>
+       <usearg name="res" type="NullablePointer[Graphenesizet]"/>
+     </useargs>
+  </use>
+  <use id="_15110" name="graphene_size_zero"
+     ponyname="graphene_size_zero"
+     fid="f420"
+     lineno="102"
+     rv="NullablePointer[Graphenesizet]">
+     <useargs/>
+  </use>
+  <use id="_15111" name="graphene_rect_alloc"
+     ponyname="graphene_rect_alloc"
+     fid="f421"
+     lineno="90"
+     rv="NullablePointer[Graphenerectt]">
+     <useargs/>
+  </use>
+  <use id="_15112" name="graphene_rect_free"
+     ponyname="graphene_rect_free"
+     fid="f421"
+     lineno="92"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15113" name="graphene_rect_init"
+     ponyname="graphene_rect_init"
+     fid="f421"
+     lineno="94"
+     rv="NullablePointer[Graphenerectt]">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="x" type="F32"/>
+       <usearg name="y" type="F32"/>
+       <usearg name="width" type="F32"/>
+       <usearg name="height" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15114" name="graphene_rect_init_from_rect"
+     ponyname="graphene_rect_init_from_rect"
+     fid="f421"
+     lineno="100"
+     rv="NullablePointer[Graphenerectt]">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="src" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15115" name="graphene_rect_equal"
+     ponyname="graphene_rect_equal"
+     fid="f421"
+     lineno="104"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="b" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15116" name="graphene_rect_normalize"
+     ponyname="graphene_rect_normalize"
+     fid="f421"
+     lineno="107"
+     rv="NullablePointer[Graphenerectt]">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15117" name="graphene_rect_normalize_r"
+     ponyname="graphene_rect_normalize_r"
+     fid="f421"
+     lineno="109"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="res" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15118" name="graphene_rect_get_center"
+     ponyname="graphene_rect_get_center"
+     fid="f421"
+     lineno="112"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="p" type="NullablePointer[Graphenepointt]"/>
+     </useargs>
+  </use>
+  <use id="_15119" name="graphene_rect_get_top_left"
+     ponyname="graphene_rect_get_top_left"
+     fid="f421"
+     lineno="115"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="p" type="NullablePointer[Graphenepointt]"/>
+     </useargs>
+  </use>
+  <use id="_15120" name="graphene_rect_get_top_right"
+     ponyname="graphene_rect_get_top_right"
+     fid="f421"
+     lineno="118"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="p" type="NullablePointer[Graphenepointt]"/>
+     </useargs>
+  </use>
+  <use id="_15121" name="graphene_rect_get_bottom_right"
+     ponyname="graphene_rect_get_bottom_right"
+     fid="f421"
+     lineno="121"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="p" type="NullablePointer[Graphenepointt]"/>
+     </useargs>
+  </use>
+  <use id="_15122" name="graphene_rect_get_bottom_left"
+     ponyname="graphene_rect_get_bottom_left"
+     fid="f421"
+     lineno="124"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="p" type="NullablePointer[Graphenepointt]"/>
+     </useargs>
+  </use>
+  <use id="_15123" name="graphene_rect_get_vertices"
+     ponyname="graphene_rect_get_vertices"
+     fid="f421"
+     lineno="127"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="vertices" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_15124" name="graphene_rect_get_x"
+     ponyname="graphene_rect_get_x"
+     fid="f421"
+     lineno="130"
+     rv="F32">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15125" name="graphene_rect_get_y"
+     ponyname="graphene_rect_get_y"
+     fid="f421"
+     lineno="132"
+     rv="F32">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15126" name="graphene_rect_get_width"
+     ponyname="graphene_rect_get_width"
+     fid="f421"
+     lineno="134"
+     rv="F32">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15127" name="graphene_rect_get_height"
+     ponyname="graphene_rect_get_height"
+     fid="f421"
+     lineno="136"
+     rv="F32">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15128" name="graphene_rect_get_area"
+     ponyname="graphene_rect_get_area"
+     fid="f421"
+     lineno="138"
+     rv="F32">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15129" name="graphene_rect_union"
+     ponyname="graphene_rect_union"
+     fid="f421"
+     lineno="141"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="b" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="res" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15130" name="graphene_rect_intersection"
+     ponyname="graphene_rect_intersection"
+     fid="f421"
+     lineno="145"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="b" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="res" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15131" name="graphene_rect_contains_point"
+     ponyname="graphene_rect_contains_point"
+     fid="f421"
+     lineno="149"
+     rv="Bool">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="p" type="NullablePointer[Graphenepointt]"/>
+     </useargs>
+  </use>
+  <use id="_15132" name="graphene_rect_contains_rect"
+     ponyname="graphene_rect_contains_rect"
+     fid="f421"
+     lineno="152"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="b" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15133" name="graphene_rect_offset"
+     ponyname="graphene_rect_offset"
+     fid="f421"
+     lineno="155"
+     rv="NullablePointer[Graphenerectt]">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="dx" type="F32"/>
+       <usearg name="dy" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15134" name="graphene_rect_offset_r"
+     ponyname="graphene_rect_offset_r"
+     fid="f421"
+     lineno="159"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="dx" type="F32"/>
+       <usearg name="dy" type="F32"/>
+       <usearg name="res" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15135" name="graphene_rect_inset"
+     ponyname="graphene_rect_inset"
+     fid="f421"
+     lineno="164"
+     rv="NullablePointer[Graphenerectt]">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="dx" type="F32"/>
+       <usearg name="dy" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15136" name="graphene_rect_inset_r"
+     ponyname="graphene_rect_inset_r"
+     fid="f421"
+     lineno="168"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="dx" type="F32"/>
+       <usearg name="dy" type="F32"/>
+       <usearg name="res" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15137" name="graphene_rect_round_to_pixel"
+     ponyname="graphene_rect_round_to_pixel"
+     fid="f421"
+     lineno="173"
+     rv="NullablePointer[Graphenerectt]">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15138" name="graphene_rect_round"
+     ponyname="graphene_rect_round"
+     fid="f421"
+     lineno="175"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="res" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15139" name="graphene_rect_round_extents"
+     ponyname="graphene_rect_round_extents"
+     fid="f421"
+     lineno="178"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="res" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15140" name="graphene_rect_interpolate"
+     ponyname="graphene_rect_interpolate"
+     fid="f421"
+     lineno="181"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="b" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="factor" type="F64"/>
+       <usearg name="res" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15141" name="graphene_rect_expand"
+     ponyname="graphene_rect_expand"
+     fid="f421"
+     lineno="187"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="p" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="res" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15142" name="graphene_rect_zero"
+     ponyname="graphene_rect_zero"
+     fid="f421"
+     lineno="192"
+     rv="NullablePointer[Graphenerectt]">
+     <useargs/>
+  </use>
+  <use id="_15143" name="graphene_rect_scale"
+     ponyname="graphene_rect_scale"
+     fid="f421"
+     lineno="195"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="sh" type="F32"/>
+       <usearg name="sv" type="F32"/>
+       <usearg name="res" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15144" name="graphene_point3d_alloc"
+     ponyname="graphene_point3d_alloc"
+     fid="f422"
+     lineno="75"
+     rv="NullablePointer[Graphenepoint3dt]">
+     <useargs/>
+  </use>
+  <use id="_15145" name="graphene_point3d_free"
+     ponyname="graphene_point3d_free"
+     fid="f422"
+     lineno="77"
+     rv="None">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15146" name="graphene_point3d_init"
+     ponyname="graphene_point3d_init"
+     fid="f422"
+     lineno="80"
+     rv="NullablePointer[Graphenepoint3dt]">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="x" type="F32"/>
+       <usearg name="y" type="F32"/>
+       <usearg name="z" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15147" name="graphene_point3d_init_from_point"
+     ponyname="graphene_point3d_init_from_point"
+     fid="f422"
+     lineno="85"
+     rv="NullablePointer[Graphenepoint3dt]">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="src" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15148" name="graphene_point3d_init_from_vec3"
+     ponyname="graphene_point3d_init_from_vec3"
+     fid="f422"
+     lineno="88"
+     rv="NullablePointer[Graphenepoint3dt]">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15149" name="graphene_point3d_to_vec3"
+     ponyname="graphene_point3d_to_vec3"
+     fid="f422"
+     lineno="91"
+     rv="None">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15150" name="graphene_point3d_equal"
+     ponyname="graphene_point3d_equal"
+     fid="f422"
+     lineno="95"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="b" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15151" name="graphene_point3d_near"
+     ponyname="graphene_point3d_near"
+     fid="f422"
+     lineno="98"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="b" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="epsilon" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15152" name="graphene_point3d_scale"
+     ponyname="graphene_point3d_scale"
+     fid="f422"
+     lineno="103"
+     rv="None">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="factor" type="F32"/>
+       <usearg name="res" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15153" name="graphene_point3d_cross"
+     ponyname="graphene_point3d_cross"
+     fid="f422"
+     lineno="107"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="b" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="res" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15154" name="graphene_point3d_dot"
+     ponyname="graphene_point3d_dot"
+     fid="f422"
+     lineno="111"
+     rv="F32">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="b" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15155" name="graphene_point3d_length"
+     ponyname="graphene_point3d_length"
+     fid="f422"
+     lineno="114"
+     rv="F32">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15156" name="graphene_point3d_normalize"
+     ponyname="graphene_point3d_normalize"
+     fid="f422"
+     lineno="116"
+     rv="None">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="res" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15157" name="graphene_point3d_distance"
+     ponyname="graphene_point3d_distance"
+     fid="f422"
+     lineno="119"
+     rv="F32">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="b" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="delta" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15158" name="graphene_point3d_interpolate"
+     ponyname="graphene_point3d_interpolate"
+     fid="f422"
+     lineno="124"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="b" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="factor" type="F64"/>
+       <usearg name="res" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15159" name="graphene_point3d_normalize_viewport"
+     ponyname="graphene_point3d_normalize_viewport"
+     fid="f422"
+     lineno="130"
+     rv="None">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="viewport" type="NullablePointer[Graphenerectt]"/>
+       <usearg name="znear" type="F32"/>
+       <usearg name="zfar" type="F32"/>
+       <usearg name="res" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15160" name="graphene_point3d_zero"
+     ponyname="graphene_point3d_zero"
+     fid="f422"
+     lineno="137"
+     rv="NullablePointer[Graphenepoint3dt]">
+     <useargs/>
+  </use>
+  <use id="_15161" name="graphene_quad_alloc"
+     ponyname="graphene_quad_alloc"
+     fid="f423"
+     lineno="50"
+     rv="NullablePointer[Graphenequadt]">
+     <useargs/>
+  </use>
+  <use id="_15162" name="graphene_quad_free"
+     ponyname="graphene_quad_free"
+     fid="f423"
+     lineno="52"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequadt]"/>
+     </useargs>
+  </use>
+  <use id="_15163" name="graphene_quad_init"
+     ponyname="graphene_quad_init"
+     fid="f423"
+     lineno="55"
+     rv="NullablePointer[Graphenequadt]">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequadt]"/>
+       <usearg name="p1" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="p2" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="p3" type="NullablePointer[Graphenepointt]"/>
+       <usearg name="p4" type="NullablePointer[Graphenepointt]"/>
+     </useargs>
+  </use>
+  <use id="_15164" name="graphene_quad_init_from_rect"
+     ponyname="graphene_quad_init_from_rect"
+     fid="f423"
+     lineno="61"
+     rv="NullablePointer[Graphenequadt]">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequadt]"/>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15165" name="graphene_quad_init_from_points"
+     ponyname="graphene_quad_init_from_points"
+     fid="f423"
+     lineno="64"
+     rv="NullablePointer[Graphenequadt]">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequadt]"/>
+       <usearg name="points" type="NullablePointer[Graphenepointt]"/>
+     </useargs>
+  </use>
+  <use id="_15166" name="graphene_quad_contains"
+     ponyname="graphene_quad_contains"
+     fid="f423"
+     lineno="68"
+     rv="Bool">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequadt]"/>
+       <usearg name="p" type="NullablePointer[Graphenepointt]"/>
+     </useargs>
+  </use>
+  <use id="_15167" name="graphene_quad_bounds"
+     ponyname="graphene_quad_bounds"
+     fid="f423"
+     lineno="72"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequadt]"/>
+       <usearg name="r" type="NullablePointer[Graphenerectt]"/>
+     </useargs>
+  </use>
+  <use id="_15168" name="graphene_quad_get_point"
+     ponyname="graphene_quad_get_point"
+     fid="f423"
+     lineno="76"
+     rv="NullablePointer[Graphenepointt]">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequadt]"/>
+       <usearg name="index" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_15169" name="graphene_quaternion_alloc"
+     ponyname="graphene_quaternion_alloc"
+     fid="f424"
+     lineno="57"
+     rv="NullablePointer[Graphenequaterniont]">
+     <useargs/>
+  </use>
+  <use id="_15170" name="graphene_quaternion_free"
+     ponyname="graphene_quaternion_free"
+     fid="f424"
+     lineno="59"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+     </useargs>
+  </use>
+  <use id="_15171" name="graphene_quaternion_init"
+     ponyname="graphene_quaternion_init"
+     fid="f424"
+     lineno="62"
+     rv="NullablePointer[Graphenequaterniont]">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="x" type="F32"/>
+       <usearg name="y" type="F32"/>
+       <usearg name="z" type="F32"/>
+       <usearg name="w" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15172" name="graphene_quaternion_init_identity"
+     ponyname="graphene_quaternion_init_identity"
+     fid="f424"
+     lineno="68"
+     rv="NullablePointer[Graphenequaterniont]">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+     </useargs>
+  </use>
+  <use id="_15173" name="graphene_quaternion_init_from_quaternion"
+     ponyname="graphene_quaternion_init_from_quaternion"
+     fid="f424"
+     lineno="70"
+     rv="NullablePointer[Graphenequaterniont]">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="src" type="NullablePointer[Graphenequaterniont]"/>
+     </useargs>
+  </use>
+  <use id="_15174" name="graphene_quaternion_init_from_vec4"
+     ponyname="graphene_quaternion_init_from_vec4"
+     fid="f424"
+     lineno="73"
+     rv="NullablePointer[Graphenequaterniont]">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="src" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15175" name="graphene_quaternion_init_from_matrix"
+     ponyname="graphene_quaternion_init_from_matrix"
+     fid="f424"
+     lineno="76"
+     rv="NullablePointer[Graphenequaterniont]">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15176" name="graphene_quaternion_init_from_angles"
+     ponyname="graphene_quaternion_init_from_angles"
+     fid="f424"
+     lineno="79"
+     rv="NullablePointer[Graphenequaterniont]">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="degx" type="F32"/>
+       <usearg name="degy" type="F32"/>
+       <usearg name="degz" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15177" name="graphene_quaternion_init_from_radians"
+     ponyname="graphene_quaternion_init_from_radians"
+     fid="f424"
+     lineno="84"
+     rv="NullablePointer[Graphenequaterniont]">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="radx" type="F32"/>
+       <usearg name="rady" type="F32"/>
+       <usearg name="radz" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15178" name="graphene_quaternion_init_from_angle_vec3"
+     ponyname="graphene_quaternion_init_from_angle_vec3"
+     fid="f424"
+     lineno="89"
+     rv="NullablePointer[Graphenequaterniont]">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="angle" type="F32"/>
+       <usearg name="axis" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15179" name="graphene_quaternion_init_from_euler"
+     ponyname="graphene_quaternion_init_from_euler"
+     fid="f424"
+     lineno="93"
+     rv="NullablePointer[Graphenequaterniont]">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+     </useargs>
+  </use>
+  <use id="_15180" name="graphene_quaternion_to_vec4"
+     ponyname="graphene_quaternion_to_vec4"
+     fid="f424"
+     lineno="97"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15181" name="graphene_quaternion_to_matrix"
+     ponyname="graphene_quaternion_to_matrix"
+     fid="f424"
+     lineno="100"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15182" name="graphene_quaternion_to_angles"
+     ponyname="graphene_quaternion_to_angles"
+     fid="f424"
+     lineno="103"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="degx" type="Pointer[F32]"/>
+       <usearg name="degy" type="Pointer[F32]"/>
+       <usearg name="degz" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_15183" name="graphene_quaternion_to_radians"
+     ponyname="graphene_quaternion_to_radians"
+     fid="f424"
+     lineno="108"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="radx" type="Pointer[F32]"/>
+       <usearg name="rady" type="Pointer[F32]"/>
+       <usearg name="radz" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_15184" name="graphene_quaternion_to_angle_vec3"
+     ponyname="graphene_quaternion_to_angle_vec3"
+     fid="f424"
+     lineno="113"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="angle" type="Pointer[F32]"/>
+       <usearg name="axis" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15185" name="graphene_quaternion_equal"
+     ponyname="graphene_quaternion_equal"
+     fid="f424"
+     lineno="118"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="b" type="NullablePointer[Graphenequaterniont]"/>
+     </useargs>
+  </use>
+  <use id="_15186" name="graphene_quaternion_dot"
+     ponyname="graphene_quaternion_dot"
+     fid="f424"
+     lineno="121"
+     rv="F32">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="b" type="NullablePointer[Graphenequaterniont]"/>
+     </useargs>
+  </use>
+  <use id="_15187" name="graphene_quaternion_invert"
+     ponyname="graphene_quaternion_invert"
+     fid="f424"
+     lineno="124"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="res" type="NullablePointer[Graphenequaterniont]"/>
+     </useargs>
+  </use>
+  <use id="_15188" name="graphene_quaternion_normalize"
+     ponyname="graphene_quaternion_normalize"
+     fid="f424"
+     lineno="127"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="res" type="NullablePointer[Graphenequaterniont]"/>
+     </useargs>
+  </use>
+  <use id="_15189" name="graphene_quaternion_slerp"
+     ponyname="graphene_quaternion_slerp"
+     fid="f424"
+     lineno="130"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="b" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="factor" type="F32"/>
+       <usearg name="res" type="NullablePointer[Graphenequaterniont]"/>
+     </useargs>
+  </use>
+  <use id="_15190" name="graphene_quaternion_multiply"
+     ponyname="graphene_quaternion_multiply"
+     fid="f424"
+     lineno="135"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="b" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="res" type="NullablePointer[Graphenequaterniont]"/>
+     </useargs>
+  </use>
+  <use id="_15191" name="graphene_quaternion_scale"
+     ponyname="graphene_quaternion_scale"
+     fid="f424"
+     lineno="139"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="factor" type="F32"/>
+       <usearg name="res" type="NullablePointer[Graphenequaterniont]"/>
+     </useargs>
+  </use>
+  <use id="_15192" name="graphene_quaternion_add"
+     ponyname="graphene_quaternion_add"
+     fid="f424"
+     lineno="143"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="b" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="res" type="NullablePointer[Graphenequaterniont]"/>
+     </useargs>
+  </use>
+  <use id="_15195" name="graphene_euler_alloc"
+     ponyname="graphene_euler_alloc"
+     fid="f425"
+     lineno="143"
+     rv="NullablePointer[Grapheneeulert]">
+     <useargs/>
+  </use>
+  <use id="_15196" name="graphene_euler_free"
+     ponyname="graphene_euler_free"
+     fid="f425"
+     lineno="145"
+     rv="None">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+     </useargs>
+  </use>
+  <use id="_15197" name="graphene_euler_init"
+     ponyname="graphene_euler_init"
+     fid="f425"
+     lineno="148"
+     rv="NullablePointer[Grapheneeulert]">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+       <usearg name="x" type="F32"/>
+       <usearg name="y" type="F32"/>
+       <usearg name="z" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15198" name="graphene_euler_init_with_order"
+     ponyname="graphene_euler_init_with_order"
+     fid="f425"
+     lineno="153"
+     rv="NullablePointer[Grapheneeulert]">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+       <usearg name="x" type="F32"/>
+       <usearg name="y" type="F32"/>
+       <usearg name="z" type="F32"/>
+       <usearg name="order" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_15199" name="graphene_euler_init_from_matrix"
+     ponyname="graphene_euler_init_from_matrix"
+     fid="f425"
+     lineno="159"
+     rv="NullablePointer[Grapheneeulert]">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+       <usearg name="m" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="order" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_15200" name="graphene_euler_init_from_quaternion"
+     ponyname="graphene_euler_init_from_quaternion"
+     fid="f425"
+     lineno="163"
+     rv="NullablePointer[Grapheneeulert]">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+       <usearg name="q" type="NullablePointer[Graphenequaterniont]"/>
+       <usearg name="order" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_15201" name="graphene_euler_init_from_vec3"
+     ponyname="graphene_euler_init_from_vec3"
+     fid="f425"
+     lineno="167"
+     rv="NullablePointer[Grapheneeulert]">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+       <usearg name="v" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="order" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_15202" name="graphene_euler_init_from_euler"
+     ponyname="graphene_euler_init_from_euler"
+     fid="f425"
+     lineno="171"
+     rv="NullablePointer[Grapheneeulert]">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+       <usearg name="src" type="NullablePointer[Grapheneeulert]"/>
+     </useargs>
+  </use>
+  <use id="_15203" name="graphene_euler_init_from_radians"
+     ponyname="graphene_euler_init_from_radians"
+     fid="f425"
+     lineno="174"
+     rv="NullablePointer[Grapheneeulert]">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+       <usearg name="x" type="F32"/>
+       <usearg name="y" type="F32"/>
+       <usearg name="z" type="F32"/>
+       <usearg name="order" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_15204" name="graphene_euler_equal"
+     ponyname="graphene_euler_equal"
+     fid="f425"
+     lineno="181"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Grapheneeulert]"/>
+       <usearg name="b" type="NullablePointer[Grapheneeulert]"/>
+     </useargs>
+  </use>
+  <use id="_15205" name="graphene_euler_get_x"
+     ponyname="graphene_euler_get_x"
+     fid="f425"
+     lineno="185"
+     rv="F32">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+     </useargs>
+  </use>
+  <use id="_15206" name="graphene_euler_get_y"
+     ponyname="graphene_euler_get_y"
+     fid="f425"
+     lineno="187"
+     rv="F32">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+     </useargs>
+  </use>
+  <use id="_15207" name="graphene_euler_get_z"
+     ponyname="graphene_euler_get_z"
+     fid="f425"
+     lineno="189"
+     rv="F32">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+     </useargs>
+  </use>
+  <use id="_15208" name="graphene_euler_get_order"
+     ponyname="graphene_euler_get_order"
+     fid="f425"
+     lineno="191"
+     rv="I32">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+     </useargs>
+  </use>
+  <use id="_15209" name="graphene_euler_get_alpha"
+     ponyname="graphene_euler_get_alpha"
+     fid="f425"
+     lineno="194"
+     rv="F32">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+     </useargs>
+  </use>
+  <use id="_15210" name="graphene_euler_get_beta"
+     ponyname="graphene_euler_get_beta"
+     fid="f425"
+     lineno="196"
+     rv="F32">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+     </useargs>
+  </use>
+  <use id="_15211" name="graphene_euler_get_gamma"
+     ponyname="graphene_euler_get_gamma"
+     fid="f425"
+     lineno="198"
+     rv="F32">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+     </useargs>
+  </use>
+  <use id="_15212" name="graphene_euler_to_vec3"
+     ponyname="graphene_euler_to_vec3"
+     fid="f425"
+     lineno="201"
+     rv="None">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15213" name="graphene_euler_to_matrix"
+     ponyname="graphene_euler_to_matrix"
+     fid="f425"
+     lineno="204"
+     rv="None">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+       <usearg name="res" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15214" name="graphene_euler_to_quaternion"
+     ponyname="graphene_euler_to_quaternion"
+     fid="f425"
+     lineno="207"
+     rv="None">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+       <usearg name="res" type="NullablePointer[Graphenequaterniont]"/>
+     </useargs>
+  </use>
+  <use id="_15215" name="graphene_euler_reorder"
+     ponyname="graphene_euler_reorder"
+     fid="f425"
+     lineno="211"
+     rv="None">
+     <useargs>
+       <usearg name="e" type="NullablePointer[Grapheneeulert]"/>
+       <usearg name="order" type="I32"/>
+       <usearg name="res" type="NullablePointer[Grapheneeulert]"/>
+     </useargs>
+  </use>
+  <use id="_15216" name="graphene_plane_alloc"
+     ponyname="graphene_plane_alloc"
+     fid="f426"
+     lineno="55"
+     rv="NullablePointer[Grapheneplanet]">
+     <useargs/>
+  </use>
+  <use id="_15217" name="graphene_plane_free"
+     ponyname="graphene_plane_free"
+     fid="f426"
+     lineno="57"
+     rv="None">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Grapheneplanet]"/>
+     </useargs>
+  </use>
+  <use id="_15218" name="graphene_plane_init"
+     ponyname="graphene_plane_init"
+     fid="f426"
+     lineno="60"
+     rv="NullablePointer[Grapheneplanet]">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Grapheneplanet]"/>
+       <usearg name="normal" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="constant" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15219" name="graphene_plane_init_from_vec4"
+     ponyname="graphene_plane_init_from_vec4"
+     fid="f426"
+     lineno="64"
+     rv="NullablePointer[Grapheneplanet]">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Grapheneplanet]"/>
+       <usearg name="src" type="NullablePointer[Graphenevec4t]"/>
+     </useargs>
+  </use>
+  <use id="_15220" name="graphene_plane_init_from_plane"
+     ponyname="graphene_plane_init_from_plane"
+     fid="f426"
+     lineno="67"
+     rv="NullablePointer[Grapheneplanet]">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Grapheneplanet]"/>
+       <usearg name="src" type="NullablePointer[Grapheneplanet]"/>
+     </useargs>
+  </use>
+  <use id="_15221" name="graphene_plane_init_from_point"
+     ponyname="graphene_plane_init_from_point"
+     fid="f426"
+     lineno="70"
+     rv="NullablePointer[Grapheneplanet]">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Grapheneplanet]"/>
+       <usearg name="normal" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="point" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15222" name="graphene_plane_init_from_points"
+     ponyname="graphene_plane_init_from_points"
+     fid="f426"
+     lineno="74"
+     rv="NullablePointer[Grapheneplanet]">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Grapheneplanet]"/>
+       <usearg name="a" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="b" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="c" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15223" name="graphene_plane_normalize"
+     ponyname="graphene_plane_normalize"
+     fid="f426"
+     lineno="80"
+     rv="None">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Grapheneplanet]"/>
+       <usearg name="res" type="NullablePointer[Grapheneplanet]"/>
+     </useargs>
+  </use>
+  <use id="_15224" name="graphene_plane_negate"
+     ponyname="graphene_plane_negate"
+     fid="f426"
+     lineno="83"
+     rv="None">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Grapheneplanet]"/>
+       <usearg name="res" type="NullablePointer[Grapheneplanet]"/>
+     </useargs>
+  </use>
+  <use id="_15225" name="graphene_plane_equal"
+     ponyname="graphene_plane_equal"
+     fid="f426"
+     lineno="86"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Grapheneplanet]"/>
+       <usearg name="b" type="NullablePointer[Grapheneplanet]"/>
+     </useargs>
+  </use>
+  <use id="_15226" name="graphene_plane_distance"
+     ponyname="graphene_plane_distance"
+     fid="f426"
+     lineno="89"
+     rv="F32">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Grapheneplanet]"/>
+       <usearg name="point" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15227" name="graphene_plane_get_normal"
+     ponyname="graphene_plane_get_normal"
+     fid="f426"
+     lineno="93"
+     rv="None">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Grapheneplanet]"/>
+       <usearg name="normal" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15228" name="graphene_plane_get_constant"
+     ponyname="graphene_plane_get_constant"
+     fid="f426"
+     lineno="96"
+     rv="F32">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Grapheneplanet]"/>
+     </useargs>
+  </use>
+  <use id="_15229" name="graphene_plane_transform"
+     ponyname="graphene_plane_transform"
+     fid="f426"
+     lineno="99"
+     rv="None">
+     <useargs>
+       <usearg name="p" type="NullablePointer[Grapheneplanet]"/>
+       <usearg name="matrix" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="normalmatrix" type="NullablePointer[Graphenematrixt]"/>
+       <usearg name="res" type="NullablePointer[Grapheneplanet]"/>
+     </useargs>
+  </use>
+  <use id="_15230" name="graphene_frustum_alloc"
+     ponyname="graphene_frustum_alloc"
+     fid="f427"
+     lineno="54"
+     rv="NullablePointer[Graphenefrustumt]">
+     <useargs/>
+  </use>
+  <use id="_15231" name="graphene_frustum_free"
+     ponyname="graphene_frustum_free"
+     fid="f427"
+     lineno="56"
+     rv="None">
+     <useargs>
+       <usearg name="f" type="NullablePointer[Graphenefrustumt]"/>
+     </useargs>
+  </use>
+  <use id="_15232" name="graphene_frustum_init"
+     ponyname="graphene_frustum_init"
+     fid="f427"
+     lineno="59"
+     rv="NullablePointer[Graphenefrustumt]">
+     <useargs>
+       <usearg name="f" type="NullablePointer[Graphenefrustumt]"/>
+       <usearg name="p0" type="NullablePointer[Grapheneplanet]"/>
+       <usearg name="p1" type="NullablePointer[Grapheneplanet]"/>
+       <usearg name="p2" type="NullablePointer[Grapheneplanet]"/>
+       <usearg name="p3" type="NullablePointer[Grapheneplanet]"/>
+       <usearg name="p4" type="NullablePointer[Grapheneplanet]"/>
+       <usearg name="p5" type="NullablePointer[Grapheneplanet]"/>
+     </useargs>
+  </use>
+  <use id="_15233" name="graphene_frustum_init_from_frustum"
+     ponyname="graphene_frustum_init_from_frustum"
+     fid="f427"
+     lineno="67"
+     rv="NullablePointer[Graphenefrustumt]">
+     <useargs>
+       <usearg name="f" type="NullablePointer[Graphenefrustumt]"/>
+       <usearg name="src" type="NullablePointer[Graphenefrustumt]"/>
+     </useargs>
+  </use>
+  <use id="_15234" name="graphene_frustum_init_from_matrix"
+     ponyname="graphene_frustum_init_from_matrix"
+     fid="f427"
+     lineno="70"
+     rv="NullablePointer[Graphenefrustumt]">
+     <useargs>
+       <usearg name="f" type="NullablePointer[Graphenefrustumt]"/>
+       <usearg name="matrix" type="NullablePointer[Graphenematrixt]"/>
+     </useargs>
+  </use>
+  <use id="_15235" name="graphene_frustum_contains_point"
+     ponyname="graphene_frustum_contains_point"
+     fid="f427"
+     lineno="74"
+     rv="Bool">
+     <useargs>
+       <usearg name="f" type="NullablePointer[Graphenefrustumt]"/>
+       <usearg name="point" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15236" name="graphene_frustum_intersects_sphere"
+     ponyname="graphene_frustum_intersects_sphere"
+     fid="f427"
+     lineno="78"
+     rv="Bool">
+     <useargs>
+       <usearg name="f" type="NullablePointer[Graphenefrustumt]"/>
+       <usearg name="sphere" type="NullablePointer[Graphenespheret]"/>
+     </useargs>
+  </use>
+  <use id="_15237" name="graphene_frustum_intersects_box"
+     ponyname="graphene_frustum_intersects_box"
+     fid="f427"
+     lineno="81"
+     rv="Bool">
+     <useargs>
+       <usearg name="f" type="NullablePointer[Graphenefrustumt]"/>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15238" name="graphene_frustum_get_planes"
+     ponyname="graphene_frustum_get_planes"
+     fid="f427"
+     lineno="85"
+     rv="None">
+     <useargs>
+       <usearg name="f" type="NullablePointer[Graphenefrustumt]"/>
+       <usearg name="planes" type="NullablePointer[Grapheneplanet]"/>
+     </useargs>
+  </use>
+  <use id="_15239" name="graphene_frustum_equal"
+     ponyname="graphene_frustum_equal"
+     fid="f427"
+     lineno="89"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenefrustumt]"/>
+       <usearg name="b" type="NullablePointer[Graphenefrustumt]"/>
+     </useargs>
+  </use>
+  <use id="_15240" name="graphene_sphere_alloc"
+     ponyname="graphene_sphere_alloc"
+     fid="f428"
+     lineno="52"
+     rv="NullablePointer[Graphenespheret]">
+     <useargs/>
+  </use>
+  <use id="_15241" name="graphene_sphere_free"
+     ponyname="graphene_sphere_free"
+     fid="f428"
+     lineno="54"
+     rv="None">
+     <useargs>
+       <usearg name="s" type="NullablePointer[Graphenespheret]"/>
+     </useargs>
+  </use>
+  <use id="_15242" name="graphene_sphere_init"
+     ponyname="graphene_sphere_init"
+     fid="f428"
+     lineno="57"
+     rv="NullablePointer[Graphenespheret]">
+     <useargs>
+       <usearg name="s" type="NullablePointer[Graphenespheret]"/>
+       <usearg name="center" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="radius" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_15243" name="graphene_sphere_init_from_points"
+     ponyname="graphene_sphere_init_from_points"
+     fid="f428"
+     lineno="62"
+     rv="NullablePointer[Graphenespheret]">
+     <useargs>
+       <usearg name="s" type="NullablePointer[Graphenespheret]"/>
+       <usearg name="npoints" type="U32"/>
+       <usearg name="points" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="center" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15244" name="graphene_sphere_init_from_vectors"
+     ponyname="graphene_sphere_init_from_vectors"
+     fid="f428"
+     lineno="67"
+     rv="NullablePointer[Graphenespheret]">
+     <useargs>
+       <usearg name="s" type="NullablePointer[Graphenespheret]"/>
+       <usearg name="nvectors" type="U32"/>
+       <usearg name="vectors" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="center" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15245" name="graphene_sphere_get_center"
+     ponyname="graphene_sphere_get_center"
+     fid="f428"
+     lineno="73"
+     rv="None">
+     <useargs>
+       <usearg name="s" type="NullablePointer[Graphenespheret]"/>
+       <usearg name="center" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15246" name="graphene_sphere_get_radius"
+     ponyname="graphene_sphere_get_radius"
+     fid="f428"
+     lineno="76"
+     rv="F32">
+     <useargs>
+       <usearg name="s" type="NullablePointer[Graphenespheret]"/>
+     </useargs>
+  </use>
+  <use id="_15247" name="graphene_sphere_is_empty"
+     ponyname="graphene_sphere_is_empty"
+     fid="f428"
+     lineno="78"
+     rv="Bool">
+     <useargs>
+       <usearg name="s" type="NullablePointer[Graphenespheret]"/>
+     </useargs>
+  </use>
+  <use id="_15248" name="graphene_sphere_equal"
+     ponyname="graphene_sphere_equal"
+     fid="f428"
+     lineno="80"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenespheret]"/>
+       <usearg name="b" type="NullablePointer[Graphenespheret]"/>
+     </useargs>
+  </use>
+  <use id="_15249" name="graphene_sphere_contains_point"
+     ponyname="graphene_sphere_contains_point"
+     fid="f428"
+     lineno="83"
+     rv="Bool">
+     <useargs>
+       <usearg name="s" type="NullablePointer[Graphenespheret]"/>
+       <usearg name="point" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15250" name="graphene_sphere_distance"
+     ponyname="graphene_sphere_distance"
+     fid="f428"
+     lineno="86"
+     rv="F32">
+     <useargs>
+       <usearg name="s" type="NullablePointer[Graphenespheret]"/>
+       <usearg name="point" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15251" name="graphene_sphere_get_bounding_box"
+     ponyname="graphene_sphere_get_bounding_box"
+     fid="f428"
+     lineno="89"
+     rv="None">
+     <useargs>
+       <usearg name="s" type="NullablePointer[Graphenespheret]"/>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15252" name="graphene_sphere_translate"
+     ponyname="graphene_sphere_translate"
+     fid="f428"
+     lineno="92"
+     rv="None">
+     <useargs>
+       <usearg name="s" type="NullablePointer[Graphenespheret]"/>
+       <usearg name="point" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="res" type="NullablePointer[Graphenespheret]"/>
+     </useargs>
+  </use>
+  <use id="_15253" name="graphene_box_alloc"
+     ponyname="graphene_box_alloc"
+     fid="f429"
+     lineno="53"
+     rv="NullablePointer[Grapheneboxt]">
+     <useargs/>
+  </use>
+  <use id="_15254" name="graphene_box_free"
+     ponyname="graphene_box_free"
+     fid="f429"
+     lineno="55"
+     rv="None">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15255" name="graphene_box_init"
+     ponyname="graphene_box_init"
+     fid="f429"
+     lineno="58"
+     rv="NullablePointer[Grapheneboxt]">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="min" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="max" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15256" name="graphene_box_init_from_points"
+     ponyname="graphene_box_init_from_points"
+     fid="f429"
+     lineno="62"
+     rv="NullablePointer[Grapheneboxt]">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="npoints" type="U32"/>
+       <usearg name="points" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15257" name="graphene_box_init_from_vectors"
+     ponyname="graphene_box_init_from_vectors"
+     fid="f429"
+     lineno="66"
+     rv="NullablePointer[Grapheneboxt]">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="nvectors" type="U32"/>
+       <usearg name="vectors" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15258" name="graphene_box_init_from_box"
+     ponyname="graphene_box_init_from_box"
+     fid="f429"
+     lineno="70"
+     rv="NullablePointer[Grapheneboxt]">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="src" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15259" name="graphene_box_init_from_vec3"
+     ponyname="graphene_box_init_from_vec3"
+     fid="f429"
+     lineno="73"
+     rv="NullablePointer[Grapheneboxt]">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="min" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="max" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15260" name="graphene_box_expand"
+     ponyname="graphene_box_expand"
+     fid="f429"
+     lineno="78"
+     rv="None">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="point" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="res" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15261" name="graphene_box_expand_vec3"
+     ponyname="graphene_box_expand_vec3"
+     fid="f429"
+     lineno="82"
+     rv="None">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="vec" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="res" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15262" name="graphene_box_expand_scalar"
+     ponyname="graphene_box_expand_scalar"
+     fid="f429"
+     lineno="86"
+     rv="None">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="scalar" type="F32"/>
+       <usearg name="res" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15263" name="graphene_box_union"
+     ponyname="graphene_box_union"
+     fid="f429"
+     lineno="90"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="b" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="res" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15264" name="graphene_box_intersection"
+     ponyname="graphene_box_intersection"
+     fid="f429"
+     lineno="94"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="b" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="res" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15265" name="graphene_box_get_width"
+     ponyname="graphene_box_get_width"
+     fid="f429"
+     lineno="99"
+     rv="F32">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15266" name="graphene_box_get_height"
+     ponyname="graphene_box_get_height"
+     fid="f429"
+     lineno="101"
+     rv="F32">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15267" name="graphene_box_get_depth"
+     ponyname="graphene_box_get_depth"
+     fid="f429"
+     lineno="103"
+     rv="F32">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15268" name="graphene_box_get_size"
+     ponyname="graphene_box_get_size"
+     fid="f429"
+     lineno="105"
+     rv="None">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="size" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15269" name="graphene_box_get_center"
+     ponyname="graphene_box_get_center"
+     fid="f429"
+     lineno="108"
+     rv="None">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="center" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15270" name="graphene_box_get_min"
+     ponyname="graphene_box_get_min"
+     fid="f429"
+     lineno="111"
+     rv="None">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="min" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15271" name="graphene_box_get_max"
+     ponyname="graphene_box_get_max"
+     fid="f429"
+     lineno="114"
+     rv="None">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="max" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15272" name="graphene_box_get_vertices"
+     ponyname="graphene_box_get_vertices"
+     fid="f429"
+     lineno="117"
+     rv="None">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="vertices" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15273" name="graphene_box_get_bounding_sphere"
+     ponyname="graphene_box_get_bounding_sphere"
+     fid="f429"
+     lineno="120"
+     rv="None">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="sphere" type="NullablePointer[Graphenespheret]"/>
+     </useargs>
+  </use>
+  <use id="_15274" name="graphene_box_contains_point"
+     ponyname="graphene_box_contains_point"
+     fid="f429"
+     lineno="124"
+     rv="Bool">
+     <useargs>
+       <usearg name="box" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="point" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15275" name="graphene_box_contains_box"
+     ponyname="graphene_box_contains_box"
+     fid="f429"
+     lineno="127"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="b" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15276" name="graphene_box_equal"
+     ponyname="graphene_box_equal"
+     fid="f429"
+     lineno="131"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="b" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15277" name="graphene_box_zero"
+     ponyname="graphene_box_zero"
+     fid="f429"
+     lineno="135"
+     rv="NullablePointer[Grapheneboxt]">
+     <useargs/>
+  </use>
+  <use id="_15278" name="graphene_box_one"
+     ponyname="graphene_box_one"
+     fid="f429"
+     lineno="137"
+     rv="NullablePointer[Grapheneboxt]">
+     <useargs/>
+  </use>
+  <use id="_15279" name="graphene_box_minus_one"
+     ponyname="graphene_box_minus_one"
+     fid="f429"
+     lineno="139"
+     rv="NullablePointer[Grapheneboxt]">
+     <useargs/>
+  </use>
+  <use id="_15280" name="graphene_box_one_minus_one"
+     ponyname="graphene_box_one_minus_one"
+     fid="f429"
+     lineno="141"
+     rv="NullablePointer[Grapheneboxt]">
+     <useargs/>
+  </use>
+  <use id="_15281" name="graphene_box_infinite"
+     ponyname="graphene_box_infinite"
+     fid="f429"
+     lineno="143"
+     rv="NullablePointer[Grapheneboxt]">
+     <useargs/>
+  </use>
+  <use id="_15282" name="graphene_box_empty"
+     ponyname="graphene_box_empty"
+     fid="f429"
+     lineno="145"
+     rv="NullablePointer[Grapheneboxt]">
+     <useargs/>
+  </use>
+  <use id="_15283" name="graphene_triangle_alloc"
+     ponyname="graphene_triangle_alloc"
+     fid="f430"
+     lineno="53"
+     rv="NullablePointer[Graphenetrianglet]">
+     <useargs/>
+  </use>
+  <use id="_15284" name="graphene_triangle_free"
+     ponyname="graphene_triangle_free"
+     fid="f430"
+     lineno="55"
+     rv="None">
+     <useargs>
+       <usearg name="t" type="NullablePointer[Graphenetrianglet]"/>
+     </useargs>
+  </use>
+  <use id="_15285" name="graphene_triangle_init_from_point3d"
+     ponyname="graphene_triangle_init_from_point3d"
+     fid="f430"
+     lineno="58"
+     rv="NullablePointer[Graphenetrianglet]">
+     <useargs>
+       <usearg name="t" type="NullablePointer[Graphenetrianglet]"/>
+       <usearg name="a" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="b" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="c" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15286" name="graphene_triangle_init_from_vec3"
+     ponyname="graphene_triangle_init_from_vec3"
+     fid="f430"
+     lineno="63"
+     rv="NullablePointer[Graphenetrianglet]">
+     <useargs>
+       <usearg name="t" type="NullablePointer[Graphenetrianglet]"/>
+       <usearg name="a" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="c" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15287" name="graphene_triangle_init_from_float"
+     ponyname="graphene_triangle_init_from_float"
+     fid="f430"
+     lineno="68"
+     rv="NullablePointer[Graphenetrianglet]">
+     <useargs>
+       <usearg name="t" type="NullablePointer[Graphenetrianglet]"/>
+       <usearg name="a" type="Pointer[F32]"/>
+       <usearg name="b" type="Pointer[F32]"/>
+       <usearg name="c" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_15288" name="graphene_triangle_get_points"
+     ponyname="graphene_triangle_get_points"
+     fid="f430"
+     lineno="73"
+     rv="None">
+     <useargs>
+       <usearg name="t" type="NullablePointer[Graphenetrianglet]"/>
+       <usearg name="a" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="b" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="c" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15289" name="graphene_triangle_get_vertices"
+     ponyname="graphene_triangle_get_vertices"
+     fid="f430"
+     lineno="78"
+     rv="None">
+     <useargs>
+       <usearg name="t" type="NullablePointer[Graphenetrianglet]"/>
+       <usearg name="a" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="b" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="c" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15290" name="graphene_triangle_get_area"
+     ponyname="graphene_triangle_get_area"
+     fid="f430"
+     lineno="83"
+     rv="F32">
+     <useargs>
+       <usearg name="t" type="NullablePointer[Graphenetrianglet]"/>
+     </useargs>
+  </use>
+  <use id="_15291" name="graphene_triangle_get_midpoint"
+     ponyname="graphene_triangle_get_midpoint"
+     fid="f430"
+     lineno="85"
+     rv="None">
+     <useargs>
+       <usearg name="t" type="NullablePointer[Graphenetrianglet]"/>
+       <usearg name="res" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15292" name="graphene_triangle_get_normal"
+     ponyname="graphene_triangle_get_normal"
+     fid="f430"
+     lineno="88"
+     rv="None">
+     <useargs>
+       <usearg name="t" type="NullablePointer[Graphenetrianglet]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15293" name="graphene_triangle_get_plane"
+     ponyname="graphene_triangle_get_plane"
+     fid="f430"
+     lineno="91"
+     rv="None">
+     <useargs>
+       <usearg name="t" type="NullablePointer[Graphenetrianglet]"/>
+       <usearg name="res" type="NullablePointer[Grapheneplanet]"/>
+     </useargs>
+  </use>
+  <use id="_15294" name="graphene_triangle_get_bounding_box"
+     ponyname="graphene_triangle_get_bounding_box"
+     fid="f430"
+     lineno="94"
+     rv="None">
+     <useargs>
+       <usearg name="t" type="NullablePointer[Graphenetrianglet]"/>
+       <usearg name="res" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15295" name="graphene_triangle_get_barycoords"
+     ponyname="graphene_triangle_get_barycoords"
+     fid="f430"
+     lineno="97"
+     rv="Bool">
+     <useargs>
+       <usearg name="t" type="NullablePointer[Graphenetrianglet]"/>
+       <usearg name="p" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_15296" name="graphene_triangle_get_uv"
+     ponyname="graphene_triangle_get_uv"
+     fid="f430"
+     lineno="101"
+     rv="Bool">
+     <useargs>
+       <usearg name="t" type="NullablePointer[Graphenetrianglet]"/>
+       <usearg name="p" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="uva" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="uvb" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="uvc" type="NullablePointer[Graphenevec2t]"/>
+       <usearg name="res" type="NullablePointer[Graphenevec2t]"/>
+     </useargs>
+  </use>
+  <use id="_15297" name="graphene_triangle_contains_point"
+     ponyname="graphene_triangle_contains_point"
+     fid="f430"
+     lineno="109"
+     rv="Bool">
+     <useargs>
+       <usearg name="t" type="NullablePointer[Graphenetrianglet]"/>
+       <usearg name="p" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15298" name="graphene_triangle_equal"
+     ponyname="graphene_triangle_equal"
+     fid="f430"
+     lineno="112"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenetrianglet]"/>
+       <usearg name="b" type="NullablePointer[Graphenetrianglet]"/>
+     </useargs>
+  </use>
+  <use id="_15301" name="graphene_ray_alloc"
+     ponyname="graphene_ray_alloc"
+     fid="f431"
+     lineno="73"
+     rv="NullablePointer[Graphenerayt]">
+     <useargs/>
+  </use>
+  <use id="_15302" name="graphene_ray_free"
+     ponyname="graphene_ray_free"
+     fid="f431"
+     lineno="75"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+     </useargs>
+  </use>
+  <use id="_15303" name="graphene_ray_init"
+     ponyname="graphene_ray_init"
+     fid="f431"
+     lineno="78"
+     rv="NullablePointer[Graphenerayt]">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="origin" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="direction" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15304" name="graphene_ray_init_from_ray"
+     ponyname="graphene_ray_init_from_ray"
+     fid="f431"
+     lineno="82"
+     rv="NullablePointer[Graphenerayt]">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="src" type="NullablePointer[Graphenerayt]"/>
+     </useargs>
+  </use>
+  <use id="_15305" name="graphene_ray_init_from_vec3"
+     ponyname="graphene_ray_init_from_vec3"
+     fid="f431"
+     lineno="85"
+     rv="NullablePointer[Graphenerayt]">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="origin" type="NullablePointer[Graphenevec3t]"/>
+       <usearg name="direction" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15306" name="graphene_ray_get_origin"
+     ponyname="graphene_ray_get_origin"
+     fid="f431"
+     lineno="89"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="origin" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15307" name="graphene_ray_get_direction"
+     ponyname="graphene_ray_get_direction"
+     fid="f431"
+     lineno="92"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="direction" type="NullablePointer[Graphenevec3t]"/>
+     </useargs>
+  </use>
+  <use id="_15308" name="graphene_ray_get_position_at"
+     ponyname="graphene_ray_get_position_at"
+     fid="f431"
+     lineno="96"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="t" type="F32"/>
+       <usearg name="position" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15309" name="graphene_ray_get_distance_to_point"
+     ponyname="graphene_ray_get_distance_to_point"
+     fid="f431"
+     lineno="100"
+     rv="F32">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="p" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15310" name="graphene_ray_get_distance_to_plane"
+     ponyname="graphene_ray_get_distance_to_plane"
+     fid="f431"
+     lineno="103"
+     rv="F32">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="p" type="NullablePointer[Grapheneplanet]"/>
+     </useargs>
+  </use>
+  <use id="_15311" name="graphene_ray_equal"
+     ponyname="graphene_ray_equal"
+     fid="f431"
+     lineno="107"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="b" type="NullablePointer[Graphenerayt]"/>
+     </useargs>
+  </use>
+  <use id="_15312" name="graphene_ray_get_closest_point_to_point"
+     ponyname="graphene_ray_get_closest_point_to_point"
+     fid="f431"
+     lineno="111"
+     rv="None">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="p" type="NullablePointer[Graphenepoint3dt]"/>
+       <usearg name="res" type="NullablePointer[Graphenepoint3dt]"/>
+     </useargs>
+  </use>
+  <use id="_15313" name="graphene_ray_intersect_sphere"
+     ponyname="graphene_ray_intersect_sphere"
+     fid="f431"
+     lineno="116"
+     rv="I32">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="s" type="NullablePointer[Graphenespheret]"/>
+       <usearg name="tout" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_15314" name="graphene_ray_intersects_sphere"
+     ponyname="graphene_ray_intersects_sphere"
+     fid="f431"
+     lineno="120"
+     rv="Bool">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="s" type="NullablePointer[Graphenespheret]"/>
+     </useargs>
+  </use>
+  <use id="_15315" name="graphene_ray_intersect_box"
+     ponyname="graphene_ray_intersect_box"
+     fid="f431"
+     lineno="123"
+     rv="I32">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="b" type="NullablePointer[Grapheneboxt]"/>
+       <usearg name="tout" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_15316" name="graphene_ray_intersects_box"
+     ponyname="graphene_ray_intersects_box"
+     fid="f431"
+     lineno="127"
+     rv="Bool">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="b" type="NullablePointer[Grapheneboxt]"/>
+     </useargs>
+  </use>
+  <use id="_15317" name="graphene_ray_intersect_triangle"
+     ponyname="graphene_ray_intersect_triangle"
+     fid="f431"
+     lineno="130"
+     rv="I32">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="t" type="NullablePointer[Graphenetrianglet]"/>
+       <usearg name="tout" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_15318" name="graphene_ray_intersects_triangle"
+     ponyname="graphene_ray_intersects_triangle"
+     fid="f431"
+     lineno="134"
+     rv="Bool">
+     <useargs>
+       <usearg name="r" type="NullablePointer[Graphenerayt]"/>
+       <usearg name="t" type="NullablePointer[Graphenetrianglet]"/>
+     </useargs>
+  </use>
+  <use id="_14831" name="graphene_simd4f_init"
+     ponyname="graphene_simd4f_init"
+     fid="f435"
+     lineno="46"
+     rv="ponytype">
+     <useargs>
+       <usearg name="x" type="F32"/>
+       <usearg name="y" type="F32"/>
+       <usearg name="z" type="F32"/>
+       <usearg name="w" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14832" name="graphene_simd4f_init_zero"
+     ponyname="graphene_simd4f_init_zero"
+     fid="f435"
+     lineno="51"
+     rv="ponytype">
+     <useargs/>
+  </use>
+  <use id="_14833" name="graphene_simd4f_init_4f"
+     ponyname="graphene_simd4f_init_4f"
+     fid="f435"
+     lineno="53"
+     rv="ponytype">
+     <useargs>
+       <usearg name="v" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_14834" name="graphene_simd4f_init_3f"
+     ponyname="graphene_simd4f_init_3f"
+     fid="f435"
+     lineno="55"
+     rv="ponytype">
+     <useargs>
+       <usearg name="v" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_14835" name="graphene_simd4f_init_2f"
+     ponyname="graphene_simd4f_init_2f"
+     fid="f435"
+     lineno="57"
+     rv="ponytype">
+     <useargs>
+       <usearg name="v" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_14836" name="graphene_simd4f_dup_4f"
+     ponyname="graphene_simd4f_dup_4f"
+     fid="f435"
+     lineno="60"
+     rv="None">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+       <usearg name="v" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_14837" name="graphene_simd4f_dup_3f"
+     ponyname="graphene_simd4f_dup_3f"
+     fid="f435"
+     lineno="63"
+     rv="None">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+       <usearg name="v" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_14838" name="graphene_simd4f_dup_2f"
+     ponyname="graphene_simd4f_dup_2f"
+     fid="f435"
+     lineno="66"
+     rv="None">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+       <usearg name="v" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_14839" name="graphene_simd4f_get"
+     ponyname="graphene_simd4f_get"
+     fid="f435"
+     lineno="70"
+     rv="F32">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+       <usearg name="i" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_14840" name="graphene_simd4f_get_x"
+     ponyname="graphene_simd4f_get_x"
+     fid="f435"
+     lineno="73"
+     rv="F32">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14841" name="graphene_simd4f_get_y"
+     ponyname="graphene_simd4f_get_y"
+     fid="f435"
+     lineno="75"
+     rv="F32">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14842" name="graphene_simd4f_get_z"
+     ponyname="graphene_simd4f_get_z"
+     fid="f435"
+     lineno="77"
+     rv="F32">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14843" name="graphene_simd4f_get_w"
+     ponyname="graphene_simd4f_get_w"
+     fid="f435"
+     lineno="79"
+     rv="F32">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14844" name="graphene_simd4f_splat"
+     ponyname="graphene_simd4f_splat"
+     fid="f435"
+     lineno="82"
+     rv="ponytype">
+     <useargs>
+       <usearg name="v" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14845" name="graphene_simd4f_splat_x"
+     ponyname="graphene_simd4f_splat_x"
+     fid="f435"
+     lineno="84"
+     rv="ponytype">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14846" name="graphene_simd4f_splat_y"
+     ponyname="graphene_simd4f_splat_y"
+     fid="f435"
+     lineno="86"
+     rv="ponytype">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14847" name="graphene_simd4f_splat_z"
+     ponyname="graphene_simd4f_splat_z"
+     fid="f435"
+     lineno="88"
+     rv="ponytype">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14848" name="graphene_simd4f_splat_w"
+     ponyname="graphene_simd4f_splat_w"
+     fid="f435"
+     lineno="90"
+     rv="ponytype">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14849" name="graphene_simd4f_add"
+     ponyname="graphene_simd4f_add"
+     fid="f435"
+     lineno="93"
+     rv="ponytype">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14850" name="graphene_simd4f_sub"
+     ponyname="graphene_simd4f_sub"
+     fid="f435"
+     lineno="96"
+     rv="ponytype">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14851" name="graphene_simd4f_mul"
+     ponyname="graphene_simd4f_mul"
+     fid="f435"
+     lineno="99"
+     rv="ponytype">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14852" name="graphene_simd4f_div"
+     ponyname="graphene_simd4f_div"
+     fid="f435"
+     lineno="102"
+     rv="ponytype">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14853" name="graphene_simd4f_sqrt"
+     ponyname="graphene_simd4f_sqrt"
+     fid="f435"
+     lineno="106"
+     rv="ponytype">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14854" name="graphene_simd4f_reciprocal"
+     ponyname="graphene_simd4f_reciprocal"
+     fid="f435"
+     lineno="108"
+     rv="ponytype">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14855" name="graphene_simd4f_rsqrt"
+     ponyname="graphene_simd4f_rsqrt"
+     fid="f435"
+     lineno="110"
+     rv="ponytype">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14856" name="graphene_simd4f_cross3"
+     ponyname="graphene_simd4f_cross3"
+     fid="f435"
+     lineno="113"
+     rv="ponytype">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14857" name="graphene_simd4f_dot3"
+     ponyname="graphene_simd4f_dot3"
+     fid="f435"
+     lineno="116"
+     rv="ponytype">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14858" name="graphene_simd4f_dot3_scalar"
+     ponyname="graphene_simd4f_dot3_scalar"
+     fid="f435"
+     lineno="119"
+     rv="F32">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14859" name="graphene_simd4f_min"
+     ponyname="graphene_simd4f_min"
+     fid="f435"
+     lineno="123"
+     rv="ponytype">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14860" name="graphene_simd4f_max"
+     ponyname="graphene_simd4f_max"
+     fid="f435"
+     lineno="126"
+     rv="ponytype">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14861" name="graphene_simd4f_shuffle_wxyz"
+     ponyname="graphene_simd4f_shuffle_wxyz"
+     fid="f435"
+     lineno="130"
+     rv="ponytype">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14862" name="graphene_simd4f_shuffle_zwxy"
+     ponyname="graphene_simd4f_shuffle_zwxy"
+     fid="f435"
+     lineno="132"
+     rv="ponytype">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14863" name="graphene_simd4f_shuffle_yzwx"
+     ponyname="graphene_simd4f_shuffle_yzwx"
+     fid="f435"
+     lineno="134"
+     rv="ponytype">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14864" name="graphene_simd4f_zero_w"
+     ponyname="graphene_simd4f_zero_w"
+     fid="f435"
+     lineno="137"
+     rv="ponytype">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14865" name="graphene_simd4f_zero_zw"
+     ponyname="graphene_simd4f_zero_zw"
+     fid="f435"
+     lineno="139"
+     rv="ponytype">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14866" name="graphene_simd4f_merge_high"
+     ponyname="graphene_simd4f_merge_high"
+     fid="f435"
+     lineno="142"
+     rv="ponytype">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14867" name="graphene_simd4f_merge_low"
+     ponyname="graphene_simd4f_merge_low"
+     fid="f435"
+     lineno="145"
+     rv="ponytype">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14868" name="graphene_simd4f_merge_w"
+     ponyname="graphene_simd4f_merge_w"
+     fid="f435"
+     lineno="148"
+     rv="ponytype">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+       <usearg name="v" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14869" name="graphene_simd4f_flip_sign_0101"
+     ponyname="graphene_simd4f_flip_sign_0101"
+     fid="f435"
+     lineno="152"
+     rv="ponytype">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14870" name="graphene_simd4f_flip_sign_1010"
+     ponyname="graphene_simd4f_flip_sign_1010"
+     fid="f435"
+     lineno="154"
+     rv="ponytype">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14871" name="graphene_simd4f_cmp_eq"
+     ponyname="graphene_simd4f_cmp_eq"
+     fid="f435"
+     lineno="157"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14872" name="graphene_simd4f_cmp_neq"
+     ponyname="graphene_simd4f_cmp_neq"
+     fid="f435"
+     lineno="160"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14873" name="graphene_simd4f_cmp_lt"
+     ponyname="graphene_simd4f_cmp_lt"
+     fid="f435"
+     lineno="163"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14874" name="graphene_simd4f_cmp_le"
+     ponyname="graphene_simd4f_cmp_le"
+     fid="f435"
+     lineno="166"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14875" name="graphene_simd4f_cmp_ge"
+     ponyname="graphene_simd4f_cmp_ge"
+     fid="f435"
+     lineno="169"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14876" name="graphene_simd4f_cmp_gt"
+     ponyname="graphene_simd4f_cmp_gt"
+     fid="f435"
+     lineno="172"
+     rv="Bool">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14877" name="graphene_simd4f_neg"
+     ponyname="graphene_simd4f_neg"
+     fid="f435"
+     lineno="175"
+     rv="ponytype">
+     <useargs>
+       <usearg name="s" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14882" name="graphene_simd4f_madd"
+     ponyname="graphene_simd4f_madd"
+     fid="f435"
+     lineno="1822"
+     rv="ponytype">
+     <useargs>
+       <usearg name="m1" type="ponytype"/>
+       <usearg name="m2" type="ponytype"/>
+       <usearg name="a" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14883" name="graphene_simd4f_sum"
+     ponyname="graphene_simd4f_sum"
+     fid="f435"
+     lineno="1841"
+     rv="ponytype">
+     <useargs>
+       <usearg name="v" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14884" name="__builtin_ia32_shufps"
+     ponyname="__builtin_ia32_shufps"
+     fid="f435"
+     lineno="1843"
+     rv="ponytype">
+     <useargs>
+       <usearg name="parg0" type="ponytype"/>
+       <usearg name="parg1" type="ponytype"/>
+       <usearg name="parg2" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_14885" name="graphene_simd4f_sum_scalar"
+     ponyname="graphene_simd4f_sum_scalar"
+     fid="f435"
+     lineno="1864"
+     rv="F32">
+     <useargs>
+       <usearg name="v" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14886" name="graphene_simd4f_dot4"
+     ponyname="graphene_simd4f_dot4"
+     fid="f435"
+     lineno="1883"
+     rv="ponytype">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14887" name="graphene_simd4f_dot2"
+     ponyname="graphene_simd4f_dot2"
+     fid="f435"
+     lineno="1903"
+     rv="ponytype">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14888" name="graphene_simd4f_length4"
+     ponyname="graphene_simd4f_length4"
+     fid="f435"
+     lineno="1925"
+     rv="ponytype">
+     <useargs>
+       <usearg name="v" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14889" name="graphene_simd4f_length3"
+     ponyname="graphene_simd4f_length3"
+     fid="f435"
+     lineno="1942"
+     rv="ponytype">
+     <useargs>
+       <usearg name="v" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14890" name="graphene_simd4f_length2"
+     ponyname="graphene_simd4f_length2"
+     fid="f435"
+     lineno="1959"
+     rv="ponytype">
+     <useargs>
+       <usearg name="v" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14891" name="graphene_simd4f_normalize4"
+     ponyname="graphene_simd4f_normalize4"
+     fid="f435"
+     lineno="1976"
+     rv="ponytype">
+     <useargs>
+       <usearg name="v" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14892" name="graphene_simd4f_normalize3"
+     ponyname="graphene_simd4f_normalize3"
+     fid="f435"
+     lineno="1994"
+     rv="ponytype">
+     <useargs>
+       <usearg name="v" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14893" name="graphene_simd4f_normalize2"
+     ponyname="graphene_simd4f_normalize2"
+     fid="f435"
+     lineno="2012"
+     rv="ponytype">
+     <useargs>
+       <usearg name="v" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14894" name="graphene_simd4f_is_zero4"
+     ponyname="graphene_simd4f_is_zero4"
+     fid="f435"
+     lineno="2030"
+     rv="Bool">
+     <useargs>
+       <usearg name="v" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14895" name="graphene_simd4f_is_zero3"
+     ponyname="graphene_simd4f_is_zero3"
+     fid="f435"
+     lineno="2048"
+     rv="Bool">
+     <useargs>
+       <usearg name="v" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14896" name="graphene_simd4f_is_zero2"
+     ponyname="graphene_simd4f_is_zero2"
+     fid="f435"
+     lineno="2067"
+     rv="Bool">
+     <useargs>
+       <usearg name="v" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14897" name="graphene_simd4f_interpolate"
+     ponyname="graphene_simd4f_interpolate"
+     fid="f435"
+     lineno="2087"
+     rv="ponytype">
+     <useargs>
+       <usearg name="a" type="ponytype"/>
+       <usearg name="b" type="ponytype"/>
+       <usearg name="f" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14898" name="graphene_simd4f_clamp"
+     ponyname="graphene_simd4f_clamp"
+     fid="f435"
+     lineno="2112"
+     rv="ponytype">
+     <useargs>
+       <usearg name="v" type="ponytype"/>
+       <usearg name="min" type="ponytype"/>
+       <usearg name="max" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14899" name="graphene_simd4f_clamp_scalar"
+     ponyname="graphene_simd4f_clamp_scalar"
+     fid="f435"
+     lineno="2135"
+     rv="ponytype">
+     <useargs>
+       <usearg name="v" type="ponytype"/>
+       <usearg name="min" type="F32"/>
+       <usearg name="max" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14900" name="graphene_simd4f_min_val"
+     ponyname="graphene_simd4f_min_val"
+     fid="f435"
+     lineno="2156"
+     rv="ponytype">
+     <useargs>
+       <usearg name="v" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14901" name="graphene_simd4f_max_val"
+     ponyname="graphene_simd4f_max_val"
+     fid="f435"
+     lineno="2178"
+     rv="ponytype">
+     <useargs>
+       <usearg name="v" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14902" name="graphene_simd4x4f_init"
+     ponyname="graphene_simd4x4f_init"
+     fid="f436"
+     lineno="73"
+     rv="">
+     <useargs>
+       <usearg name="x" type="ponytype"/>
+       <usearg name="y" type="ponytype"/>
+       <usearg name="z" type="ponytype"/>
+       <usearg name="w" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14903" name="graphene_simd4x4f_init_identity"
+     ponyname="graphene_simd4x4f_init_identity"
+     fid="f436"
+     lineno="97"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+     </useargs>
+  </use>
+  <use id="_14904" name="graphene_simd4x4f_init_from_float"
+     ponyname="graphene_simd4x4f_init_from_float"
+     fid="f436"
+     lineno="116"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+       <usearg name="f" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_14905" name="graphene_simd4x4f_to_float"
+     ponyname="graphene_simd4x4f_to_float"
+     fid="f436"
+     lineno="136"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+       <usearg name="v" type="Pointer[F32]"/>
+     </useargs>
+  </use>
+  <use id="_14906" name="graphene_simd4x4f_transpose_in_place"
+     ponyname="graphene_simd4x4f_transpose_in_place"
+     fid="f436"
+     lineno="146"
+     rv="None">
+     <useargs>
+       <usearg name="s" type="NullablePointer[]"/>
+     </useargs>
+  </use>
+  <use id="_14907" name="graphene_simd4x4f_sum"
+     ponyname="graphene_simd4x4f_sum"
+     fid="f436"
+     lineno="227"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[]"/>
+       <usearg name="res" type="NullablePointer[ponytype]"/>
+     </useargs>
+  </use>
+  <use id="_14908" name="graphene_simd4x4f_vec4_mul"
+     ponyname="graphene_simd4x4f_vec4_mul"
+     fid="f436"
+     lineno="270"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[]"/>
+       <usearg name="b" type="NullablePointer[ponytype]"/>
+       <usearg name="res" type="NullablePointer[ponytype]"/>
+     </useargs>
+  </use>
+  <use id="_14909" name="graphene_simd4x4f_vec3_mul"
+     ponyname="graphene_simd4x4f_vec3_mul"
+     fid="f436"
+     lineno="321"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+       <usearg name="v" type="NullablePointer[ponytype]"/>
+       <usearg name="res" type="NullablePointer[ponytype]"/>
+     </useargs>
+  </use>
+  <use id="_14910" name="graphene_simd4x4f_point3_mul"
+     ponyname="graphene_simd4x4f_point3_mul"
+     fid="f436"
+     lineno="373"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+       <usearg name="p" type="NullablePointer[ponytype]"/>
+       <usearg name="res" type="NullablePointer[ponytype]"/>
+     </useargs>
+  </use>
+  <use id="_14911" name="graphene_simd4x4f_transpose"
+     ponyname="graphene_simd4x4f_transpose"
+     fid="f436"
+     lineno="398"
+     rv="None">
+     <useargs>
+       <usearg name="s" type="NullablePointer[]"/>
+       <usearg name="res" type="NullablePointer[]"/>
+     </useargs>
+  </use>
+  <use id="_14912" name="graphene_simd4x4f_inv_ortho_vec3_mul"
+     ponyname="graphene_simd4x4f_inv_ortho_vec3_mul"
+     fid="f436"
+     lineno="418"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[]"/>
+       <usearg name="b" type="NullablePointer[ponytype]"/>
+       <usearg name="res" type="NullablePointer[ponytype]"/>
+     </useargs>
+  </use>
+  <use id="_14913" name="graphene_simd4x4f_inv_ortho_point3_mul"
+     ponyname="graphene_simd4x4f_inv_ortho_point3_mul"
+     fid="f436"
+     lineno="447"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[]"/>
+       <usearg name="b" type="NullablePointer[ponytype]"/>
+       <usearg name="res" type="NullablePointer[ponytype]"/>
+     </useargs>
+  </use>
+  <use id="_14914" name="graphene_simd4x4f_matrix_mul"
+     ponyname="graphene_simd4x4f_matrix_mul"
+     fid="f436"
+     lineno="487"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[]"/>
+       <usearg name="b" type="NullablePointer[]"/>
+       <usearg name="res" type="NullablePointer[]"/>
+     </useargs>
+  </use>
+  <use id="_14915" name="graphene_simd4x4f_init_perspective"
+     ponyname="graphene_simd4x4f_init_perspective"
+     fid="f436"
+     lineno="560"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+       <usearg name="fovyrad" type="F32"/>
+       <usearg name="aspect" type="F32"/>
+       <usearg name="znear" type="F32"/>
+       <usearg name="zfar" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14916" name="graphene_simd4x4f_init_ortho"
+     ponyname="graphene_simd4x4f_init_ortho"
+     fid="f436"
+     lineno="595"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+       <usearg name="left" type="F32"/>
+       <usearg name="right" type="F32"/>
+       <usearg name="bottom" type="F32"/>
+       <usearg name="top" type="F32"/>
+       <usearg name="znear" type="F32"/>
+       <usearg name="zfar" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14917" name="graphene_simd4x4f_init_look_at"
+     ponyname="graphene_simd4x4f_init_look_at"
+     fid="f436"
+     lineno="635"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+       <usearg name="eye" type="ponytype"/>
+       <usearg name="center" type="ponytype"/>
+       <usearg name="up" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14918" name="graphene_simd4x4f_init_frustum"
+     ponyname="graphene_simd4x4f_init_frustum"
+     fid="f436"
+     lineno="696"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+       <usearg name="left" type="F32"/>
+       <usearg name="right" type="F32"/>
+       <usearg name="bottom" type="F32"/>
+       <usearg name="top" type="F32"/>
+       <usearg name="znear" type="F32"/>
+       <usearg name="zfar" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14919" name="graphene_simd4x4f_perspective"
+     ponyname="graphene_simd4x4f_perspective"
+     fid="f436"
+     lineno="728"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+       <usearg name="depth" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14920" name="graphene_simd4x4f_translation"
+     ponyname="graphene_simd4x4f_translation"
+     fid="f436"
+     lineno="783"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+       <usearg name="x" type="F32"/>
+       <usearg name="y" type="F32"/>
+       <usearg name="z" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14921" name="graphene_simd4x4f_scale"
+     ponyname="graphene_simd4x4f_scale"
+     fid="f436"
+     lineno="807"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+       <usearg name="x" type="F32"/>
+       <usearg name="y" type="F32"/>
+       <usearg name="z" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_14922" name="graphene_simd4x4f_rotation"
+     ponyname="graphene_simd4x4f_rotation"
+     fid="f436"
+     lineno="831"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+       <usearg name="rad" type="F32"/>
+       <usearg name="axis" type="ponytype"/>
+     </useargs>
+  </use>
+  <use id="_14923" name="graphene_simd4x4f_add"
+     ponyname="graphene_simd4x4f_add"
+     fid="f436"
+     lineno="880"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[]"/>
+       <usearg name="b" type="NullablePointer[]"/>
+       <usearg name="res" type="NullablePointer[]"/>
+     </useargs>
+  </use>
+  <use id="_14924" name="graphene_simd4x4f_sub"
+     ponyname="graphene_simd4x4f_sub"
+     fid="f436"
+     lineno="901"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[]"/>
+       <usearg name="b" type="NullablePointer[]"/>
+       <usearg name="res" type="NullablePointer[]"/>
+     </useargs>
+  </use>
+  <use id="_14925" name="graphene_simd4x4f_mul"
+     ponyname="graphene_simd4x4f_mul"
+     fid="f436"
+     lineno="924"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[]"/>
+       <usearg name="b" type="NullablePointer[]"/>
+       <usearg name="res" type="NullablePointer[]"/>
+     </useargs>
+  </use>
+  <use id="_14926" name="graphene_simd4x4f_div"
+     ponyname="graphene_simd4x4f_div"
+     fid="f436"
+     lineno="945"
+     rv="None">
+     <useargs>
+       <usearg name="a" type="NullablePointer[]"/>
+       <usearg name="b" type="NullablePointer[]"/>
+       <usearg name="res" type="NullablePointer[]"/>
+     </useargs>
+  </use>
+  <use id="_14927" name="graphene_simd4x4f_inverse"
+     ponyname="graphene_simd4x4f_inverse"
+     fid="f436"
+     lineno="967"
+     rv="Bool">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+       <usearg name="res" type="NullablePointer[]"/>
+     </useargs>
+  </use>
+  <use id="_14928" name="graphene_simd4x4f_determinant"
+     ponyname="graphene_simd4x4f_determinant"
+     fid="f436"
+     lineno="1068"
+     rv="None">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+       <usearg name="detr" type="NullablePointer[ponytype]"/>
+       <usearg name="invdetr" type="NullablePointer[ponytype]"/>
+     </useargs>
+  </use>
+  <use id="_14929" name="graphene_simd4x4f_is_identity"
+     ponyname="graphene_simd4x4f_is_identity"
+     fid="f436"
+     lineno="1130"
+     rv="Bool">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+     </useargs>
+  </use>
+  <use id="_14930" name="graphene_simd4x4f_is_2d"
+     ponyname="graphene_simd4x4f_is_2d"
+     fid="f436"
+     lineno="1156"
+     rv="Bool">
+     <useargs>
+       <usearg name="m" type="NullablePointer[]"/>
+     </useargs>
+  </use></uses>
+</castxml2pony>
+

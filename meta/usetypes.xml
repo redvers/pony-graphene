@@ -1,0 +1,291 @@
+<typedefs>
+  <typedef name="String"
+    ponytypein="String"
+    ponytypeinconv=".cstring()"
+    ponytypeout="String"
+    structtype="Pointer[U8]"
+    structdef="Pointer[U8]"
+    argtype="Pointer[U8] tag"
+    rvtype="Pointer[U8]">
+    <ponytypeconvout>
+      <prefixs>
+        <prefix>var pcstring: Pointer[U8] = </prefix>
+      </prefixs>
+      <suffixes>
+        <suffix>let p: String iso = String.from_cstring(pcstring).clone()</suffix>
+        <suffix>consume p</suffix>
+      </suffixes>
+    </ponytypeconvout>
+  </typedef>
+
+  <typedef name="Array[String]"
+    ponytypein="Array[String]"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Pointer[U8]]"
+    structtype="Pointer[Pointer[U8]]"
+    structdef="Pointer[Pointer[U8]]"
+    argtype="Pointer[Pointer[U8]] tag"
+    rvtype="Pointer[Pointer[U8]]"/>
+
+  <typedef name="Pointer[F32]"
+    ponytypein="Pointer[F32] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[F32]"
+    structtype="Pointer[F32]"
+    structdef="Pointer[F32]"
+    argtype="Pointer[F32] tag"
+    rvtype="Pointer[F32]"/>
+
+  <typedef name="F64"
+    ponytypein="F64"
+    ponytypeinconv=""
+    ponytypeout="F64"
+    structtype="F64"
+    structdef="F64(0)"
+    argtype="F64"
+    rvtype="F64"/>
+
+  <typedef name="Bool"
+    ponytypein="Bool tag"
+    ponytypeinconv=""
+    ponytypeout="Bool"
+    structtype="Bool"
+    structdef="Bool"
+    argtype="Bool tag"
+    rvtype="Bool"/>
+
+  <typedef name="I32"
+    ponytypein="I32"
+    ponytypeinconv=""
+    ponytypeout="I32"
+    structtype="I32"
+    structdef="I32(0)"
+    argtype="I32"
+    rvtype="I32"/>
+
+  <typedef name="NullablePointer[Graphenevec2t]"
+    ponytypein="NullablePointer[Graphenevec2t] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Graphenevec2t]"
+    structtype="NullablePointer[Graphenevec2t]"
+    structdef="NullablePointer[Graphenevec2t].none()"
+    argtype="NullablePointer[Graphenevec2t] tag"
+    rvtype="NullablePointer[Graphenevec2t]"/>
+
+  <typedef name="U32"
+    ponytypein="U32"
+    ponytypeinconv=""
+    ponytypeout="U32"
+    structtype="U32"
+    structdef="U32(0)"
+    argtype="U32"
+    rvtype="U32"/>
+
+  <typedef name="NullablePointer[Graphenefrustumt]"
+    ponytypein="NullablePointer[Graphenefrustumt] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Graphenefrustumt]"
+    structtype="NullablePointer[Graphenefrustumt]"
+    structdef="NullablePointer[Graphenefrustumt].none()"
+    argtype="NullablePointer[Graphenefrustumt] tag"
+    rvtype="NullablePointer[Graphenefrustumt]"/>
+
+  <typedef name="NullablePointer[Graphenevec4t]"
+    ponytypein="NullablePointer[Graphenevec4t] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Graphenevec4t]"
+    structtype="NullablePointer[Graphenevec4t]"
+    structdef="NullablePointer[Graphenevec4t].none()"
+    argtype="NullablePointer[Graphenevec4t] tag"
+    rvtype="NullablePointer[Graphenevec4t]"/>
+
+  <typedef name="NullablePointer[]"
+    ponytypein="Pointer[None] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[None]"
+    structtype="Pointer[None]"
+    structdef="Pointer[None]"
+    argtype="Pointer[None] tag"
+    rvtype="Pointer[None]"/>
+
+  <typedef name="NullablePointer[Graphenespheret]"
+    ponytypein="NullablePointer[Graphenespheret] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Graphenespheret]"
+    structtype="NullablePointer[Graphenespheret]"
+    structdef="NullablePointer[Graphenespheret].none()"
+    argtype="NullablePointer[Graphenespheret] tag"
+    rvtype="NullablePointer[Graphenespheret]"/>
+
+  <typedef name="NullablePointer[Graphenepoint3dt]"
+    ponytypein="NullablePointer[Graphenepoint3dt] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Graphenepoint3dt]"
+    structtype="NullablePointer[Graphenepoint3dt]"
+    structdef="NullablePointer[Graphenepoint3dt].none()"
+    argtype="NullablePointer[Graphenepoint3dt] tag"
+    rvtype="NullablePointer[Graphenepoint3dt]"/>
+
+  <typedef name="NullablePointer[Graphenepointt]"
+    ponytypein="NullablePointer[Graphenepointt] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Graphenepointt]"
+    structtype="NullablePointer[Graphenepointt]"
+    structdef="NullablePointer[Graphenepointt].none()"
+    argtype="NullablePointer[Graphenepointt] tag"
+    rvtype="NullablePointer[Graphenepointt]"/>
+
+  <typedef name="NullablePointer[Graphenematrixt]"
+    ponytypein="NullablePointer[Graphenematrixt] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Graphenematrixt]"
+    structtype="NullablePointer[Graphenematrixt]"
+    structdef="NullablePointer[Graphenematrixt].none()"
+    argtype="NullablePointer[Graphenematrixt] tag"
+    rvtype="NullablePointer[Graphenematrixt]"/>
+
+  <typedef name="NullablePointer[Graphenetrianglet]"
+    ponytypein="NullablePointer[Graphenetrianglet] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Graphenetrianglet]"
+    structtype="NullablePointer[Graphenetrianglet]"
+    structdef="NullablePointer[Graphenetrianglet].none()"
+    argtype="NullablePointer[Graphenetrianglet] tag"
+    rvtype="NullablePointer[Graphenetrianglet]"/>
+
+  <typedef name="NullablePointer[Graphenerayt]"
+    ponytypein="NullablePointer[Graphenerayt] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Graphenerayt]"
+    structtype="NullablePointer[Graphenerayt]"
+    structdef="NullablePointer[Graphenerayt].none()"
+    argtype="NullablePointer[Graphenerayt] tag"
+    rvtype="NullablePointer[Graphenerayt]"/>
+
+  <typedef name=""
+    ponytypein=" tag"
+    ponytypeinconv=""
+    ponytypeout=""
+    structtype=""
+    structdef=""
+    argtype=" tag"
+    rvtype=""/>
+
+  <typedef name="None"
+    ponytypein="None tag"
+    ponytypeinconv=""
+    ponytypeout="None"
+    structtype="None"
+    structdef="None"
+    argtype="None tag"
+    rvtype="None"/>
+
+  <typedef name="F32"
+    ponytypein="F32"
+    ponytypeinconv=""
+    ponytypeout="F32"
+    structtype="F32"
+    structdef="F32(0)"
+    argtype="F32"
+    rvtype="F32"/>
+
+  <typedef name="ponytype"
+    ponytypein="ponytype tag"
+    ponytypeinconv=""
+    ponytypeout="ponytype"
+    structtype="ponytype"
+    structdef="ponytype"
+    argtype="ponytype tag"
+    rvtype="ponytype"/>
+
+  <typedef name="NullablePointer[Grapheneeulert]"
+    ponytypein="NullablePointer[Grapheneeulert] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Grapheneeulert]"
+    structtype="NullablePointer[Grapheneeulert]"
+    structdef="NullablePointer[Grapheneeulert].none()"
+    argtype="NullablePointer[Grapheneeulert] tag"
+    rvtype="NullablePointer[Grapheneeulert]"/>
+
+  <typedef name="NullablePointer[Graphenesizet]"
+    ponytypein="NullablePointer[Graphenesizet] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Graphenesizet]"
+    structtype="NullablePointer[Graphenesizet]"
+    structdef="NullablePointer[Graphenesizet].none()"
+    argtype="NullablePointer[Graphenesizet] tag"
+    rvtype="NullablePointer[Graphenesizet]"/>
+
+  <typedef name="Pointer[F64]"
+    ponytypein="Pointer[F64] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[F64]"
+    structtype="Pointer[F64]"
+    structdef="Pointer[F64]"
+    argtype="Pointer[F64] tag"
+    rvtype="Pointer[F64]"/>
+
+  <typedef name="NullablePointer[Graphenequaterniont]"
+    ponytypein="NullablePointer[Graphenequaterniont] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Graphenequaterniont]"
+    structtype="NullablePointer[Graphenequaterniont]"
+    structdef="NullablePointer[Graphenequaterniont].none()"
+    argtype="NullablePointer[Graphenequaterniont] tag"
+    rvtype="NullablePointer[Graphenequaterniont]"/>
+
+  <typedef name="NullablePointer[Graphenerectt]"
+    ponytypein="NullablePointer[Graphenerectt] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Graphenerectt]"
+    structtype="NullablePointer[Graphenerectt]"
+    structdef="NullablePointer[Graphenerectt].none()"
+    argtype="NullablePointer[Graphenerectt] tag"
+    rvtype="NullablePointer[Graphenerectt]"/>
+
+  <typedef name="NullablePointer[Graphenequadt]"
+    ponytypein="NullablePointer[Graphenequadt] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Graphenequadt]"
+    structtype="NullablePointer[Graphenequadt]"
+    structdef="NullablePointer[Graphenequadt].none()"
+    argtype="NullablePointer[Graphenequadt] tag"
+    rvtype="NullablePointer[Graphenequadt]"/>
+
+  <typedef name="NullablePointer[Grapheneboxt]"
+    ponytypein="NullablePointer[Grapheneboxt] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Grapheneboxt]"
+    structtype="NullablePointer[Grapheneboxt]"
+    structdef="NullablePointer[Grapheneboxt].none()"
+    argtype="NullablePointer[Grapheneboxt] tag"
+    rvtype="NullablePointer[Grapheneboxt]"/>
+
+  <typedef name="NullablePointer[Graphenevec3t]"
+    ponytypein="NullablePointer[Graphenevec3t] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Graphenevec3t]"
+    structtype="NullablePointer[Graphenevec3t]"
+    structdef="NullablePointer[Graphenevec3t].none()"
+    argtype="NullablePointer[Graphenevec3t] tag"
+    rvtype="NullablePointer[Graphenevec3t]"/>
+
+  <typedef name="NullablePointer[ponytype]"
+    ponytypein="NullablePointer[ponytype] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[ponytype]"
+    structtype="NullablePointer[ponytype]"
+    structdef="NullablePointer[ponytype].none()"
+    argtype="NullablePointer[ponytype] tag"
+    rvtype="NullablePointer[ponytype]"/>
+
+  <typedef name="NullablePointer[Grapheneplanet]"
+    ponytypein="NullablePointer[Grapheneplanet] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Grapheneplanet]"
+    structtype="NullablePointer[Grapheneplanet]"
+    structdef="NullablePointer[Grapheneplanet].none()"
+    argtype="NullablePointer[Grapheneplanet] tag"
+    rvtype="NullablePointer[Grapheneplanet]"/>
+</typedefs>
+
