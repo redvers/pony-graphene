@@ -1,4 +1,6 @@
-primitive CairoSys
+use "lib:graphene-1.0"
+
+primitive GrapheneSys
 
 
 /*
